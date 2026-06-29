@@ -1,0 +1,30 @@
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Arial,"Microsoft YaHei";line-height:1.75;color:#1d1d1f;background:#f3f5f9;margin:0}
+.wrap{max-width:860px;margin:0 auto;padding:26px 18px}
+main{background:#fff;border-radius:18px;padding:24px 26px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+h1{margin:.2em 0 .4em;font-size:27px}
+h2{font-size:20px;margin-top:30px;border-top:1px solid #eef0f4;padding-top:18px}
+h3{font-size:16.5px;margin:18px 0 6px}
+p{margin:.5em 0}
+nav.lang{font-size:13px;color:#8a8f99;line-height:2;margin-bottom:6px}
+nav.lang a{color:#2a8c4a;text-decoration:none;margin-right:2px}
+.tool{border:1px solid #e8ebf1;border-radius:14px;padding:14px 16px;margin:12px 0;background:#fafbfd}
+button{font-size:15px;padding:9px 16px;margin:6px 8px 2px 0;border:0;border-radius:10px;background:#27a04e;color:#fff;cursor:pointer}
+button.ghost{background:#eaf6ee;color:#1d6e38}
+button:active{transform:translateY(1px)}
+.state{display:inline-block;margin-left:6px;font-size:14px;color:#5a6170;min-width:90px}
+.big{font-size:30px;font-weight:700;color:#1d6e38;margin:8px 0}
+.note{font-size:13px;color:#7a818c;background:#f6f8fb;border-left:3px solid #27a04e;padding:8px 12px;border-radius:0 8px 8px 0;margin:12px 0}
+table{border-collapse:collapse;width:100%;margin-top:10px;font-size:14px}
+td,th{border-bottom:1px solid #eef0f4;padding:9px 8px;text-align:left;vertical-align:top}
+th{color:#3a4252}.mono{font-family:Consolas,ui-monospace,monospace;color:#2a8c4a;white-space:nowrap}
+figure.i4png,figure.diagwrap{margin:18px 0}
+figure.i4png img,svg.diag{width:100%;height:auto;border-radius:12px;border:1px solid #e8ebf1}
+figcaption{color:#8a8f99;font-size:12.5px;text-align:center;margin-top:6px}
+.faq h3{font-size:15.5px;margin-top:14px}.faq p{color:#444}
+.scenes li{margin:8px 0}
+.related a{color:#2a8c4a}
+.src{font-size:13.5px}.src a{color:#5a6170}
+footer{color:#8a8f99;font-size:12.5px;margin-top:28px;text-align:center;line-height:1.8}
+footer a{color:#2a8c4a;text-decoration:none}
+#i4data{background:#f6f8fb;border-radius:12px;padding:4px 16px 14px;margin-top:24px}

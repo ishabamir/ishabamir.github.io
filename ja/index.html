@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ヘッドホン左右チャンネルテスト・周波数スイープ・BPMタップ｜オンライン音声テスト</title>
+<meta name="description" content="無料のオンライン・ヘッドホン/音声テスト：左右チャンネル確認、20Hz–20kHz の周波数スイープで再生特性と聴力を確認、BPM タップ計測。Web Audio でブラウザ内動作、アップロードなし。">
+<link rel="canonical" href="https://ishabamir.github.io/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://ishabamir.github.io/">
+<link rel="alternate" hreflang="zh-Hant" href="https://ishabamir.github.io/zh-tw/">
+<link rel="alternate" hreflang="en" href="https://ishabamir.github.io/en/">
+<link rel="alternate" hreflang="ja" href="https://ishabamir.github.io/ja/">
+<link rel="alternate" hreflang="id" href="https://ishabamir.github.io/id/">
+<link rel="alternate" hreflang="th" href="https://ishabamir.github.io/th/">
+<link rel="alternate" hreflang="vi" href="https://ishabamir.github.io/vi/">
+<link rel="alternate" hreflang="ms" href="https://ishabamir.github.io/ms/">
+<link rel="alternate" hreflang="fil" href="https://ishabamir.github.io/fil/">
+<link rel="alternate" hreflang="km" href="https://ishabamir.github.io/km/">
+<link rel="alternate" hreflang="lo" href="https://ishabamir.github.io/lo/">
+<link rel="alternate" hreflang="my" href="https://ishabamir.github.io/my/">
+<link rel="alternate" hreflang="x-default" href="https://ishabamir.github.io/">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "name": "オンライン音声/ヘッドホンテスト",
+   "url": "https://ishabamir.github.io/ja/",
+   "applicationCategory": "MultimediaApplication",
+   "operatingSystem": "Web browser",
+   "browserRequirements": "Requires Web Audio API",
+   "inLanguage": "ja",
+   "description": "無料のオンライン・ヘッドホン/音声テスト：左右チャンネル確認、20Hz–20kHz の周波数スイープで再生特性と聴力を確認、BPM タップ計測。Web Audio でブラウザ内動作、アップロードなし。",
+   "isAccessibleForFree": true,
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "author": {
+    "@type": "Person",
+    "name": "Lin Yifan",
+    "url": "https://ishabamir.github.io/about-editorial/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "ja",
+   "url": "https://ishabamir.github.io/ja/",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "人の可聴周波数範囲は？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "健康な若年者でおよそ 20Hz から 20kHz です。可聴上限は加齢とともに徐々に下がり、これは正常な老化現象です。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "このツールは音声をアップロードしますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "いいえ。すべての音はブラウザの Web Audio API が端末内で合成・再生します。録音もネット送信もしません。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "16kHz 以上が聞こえないのは普通ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "とても一般的です。20〜25 歳を過ぎると上限は 15〜17kHz 程度まで下がり、正常な加齢です。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "左右テストは何の役に立つ？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "逆配線、片側無音、定位のずれを素早く発見でき、再生機器のステレオが正常かも確認できます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "BPM 計測は正確ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "タップが多いほど安定します。8 拍を超えると誤差は通常 1 分あたり±1 拍以内です。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body><div class="wrap"><main>
+<nav class="lang">Language: <a href="/">简体中文</a> · <a href="/zh-tw/">繁體中文</a> · <a href="/en/">English</a> · <strong>日本語</strong> · <a href="/id/">Bahasa Indonesia</a> · <a href="/th/">ไทย</a> · <a href="/vi/">Tiếng Việt</a> · <a href="/ms/">Bahasa Melayu</a> · <a href="/fil/">Filipino</a> · <a href="/km/">ភាសាខ្មែរ</a> · <a href="/lo/">ພາສາລາວ</a> · <a href="/my/">မြန်မာ</a></nav>
+<h1>オンライン・ヘッドホン/音声テスト</h1>
+<figure class="i4png"><picture><source type="image/webp" srcset="/img/cover_ja.webp"><img src="/img/cover_ja.png" alt="オンライン・ヘッドホン/音声テストツールの図" fetchpriority="high" width="1120" height="746"></picture><figcaption>図：オンライン・ヘッドホン/音声テスト（左右チャンネル · 周波数スイープ · BPM）。</figcaption></figure>
+<p>ブラウザ内蔵の Web Audio API で、ヘッドホンの左右チャンネル、20Hz から 20kHz までの周波数特性、曲の BPM をその場でテストします。すべて端末内でリアルタイム合成し、録音もアップロードもせず、ページを閉じれば消えます。</p>
+<h2>3 つのテスト、開いてすぐ使える</h2>
+<div class="tool"><h3>1. 左右チャンネルテスト</h3><p>左右それぞれに純音を鳴らし、左耳・右耳・ステレオ配線が正しいか、逆配線や片側無音がないかを確認します。</p><button id="lr-left">左</button><button id="lr-right">右</button><button id="lr-both">両方</button><button id="lr-stop" class="ghost">停止</button><span id="lrstate" class="state">停止中</span></div><div class="tool"><h3>2. 周波数スイープ（20Hz–20kHz）</h3><p>正弦波が 20Hz から 20kHz まで滑らかに上がります。聞こえる最低・最高の周波数を記録すれば、ヘッドホンの特性と自分の可聴範囲の両方が分かります。</p><button id="sweep-start">スイープ開始</button><button id="sweep-stop" class="ghost">停止</button><span id="sweepstate" class="state">停止中</span><div class="big" id="sweephz">— Hz</div></div><div class="tool"><h3>3. BPM タップ計測</h3><p>ビートに合わせてボタンをタップすると、1 分あたりの拍数（BPM）を自動計算します。8 拍以上タップすると安定します。</p><button id="bpm-tap">ビートでタップ</button><button id="bpm-reset" class="ghost">リセット</button><div class="big" id="bpmval">—</div></div><p class="note">プライバシー：すべてのテストはブラウザ内で完結します。音は Web Audio がリアルタイム合成し、タップや音声データが端末外に出ることはありません。</p>
+<figure class="diagwrap"><svg viewBox="0 0 760 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Web Audio signal chain" class="diag"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#27c85a"/></marker></defs><rect x="2" y="2" width="756" height="146" rx="14" fill="#0d142c"/><rect x="18" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="77" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Source</text><line x1="136" y1="75" x2="164" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="166" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="225" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Oscillator</text><line x1="284" y1="75" x2="312" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="314" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="373" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Gain</text><line x1="432" y1="75" x2="460" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="462" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="521" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Panner</text><line x1="580" y1="75" x2="608" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="610" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="669" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Output</text><text x="380" y="30" fill="#8fa6d8" font-family="Segoe UI,Arial" font-size="13" text-anchor="middle">AudioContext</text></svg><figcaption>図1：Web Audio の信号経路——音源がオシレーター、ゲイン、ステレオパンナーを経て出力へ。</figcaption></figure>
+<h2>音声周波数帯 早見表</h2>
+<table><tr><th>帯域</th><th>範囲</th><th>聞こえ方・用途</th></tr><tr><td>超低域</td><td class="mono">20–60 Hz</td><td>キックや低音の体感的な震え。出すぎると団子になる。</td></tr><tr><td>低域</td><td class="mono">60–250 Hz</td><td>リズムと力感の本体。低音の締まりを決める。</td></tr><tr><td>ローミッド</td><td class="mono">250–500 Hz</td><td>声や楽器の厚み。こもりが出やすい。</td></tr><tr><td>ミッド</td><td class="mono">500 Hz–2 kHz</td><td>ボーカルの本体と存在感。聴き疲れに最も影響。</td></tr><tr><td>ハイミッド</td><td class="mono">2–4 kHz</td><td>明瞭さと子音。出すぎると耳に刺さる。</td></tr><tr><td>プレゼンス</td><td class="mono">4–6 kHz</td><td>ディテールと解像感。楽器の質感。</td></tr><tr><td>ブリリアンス</td><td class="mono">6–20 kHz</td><td>空気感ときらめき。加齢で最初に失われる帯域。</td></tr></table>
+<figure class="i4png"><picture><source type="image/webp" srcset="/img/board_ja.webp"><img src="/img/board_ja.png" alt="人の可聴帯域とスイープの図" loading="lazy" width="1120" height="746"></picture><figcaption>図：20Hz–20kHz の周波数スイープでヘッドホン特性と可聴範囲を確認。</figcaption></figure>
+<figure class="diagwrap"><svg viewBox="0 0 760 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Human audible frequency spectrum 20Hz to 20kHz" class="diag"><rect x="2" y="2" width="756" height="226" rx="14" fill="#0d142c"/><line x1="40" y1="186" x2="724" y2="186" stroke="#3a4a78" stroke-width="1.5"/><rect x="40.0" y="130" width="74" height="56" rx="5" fill="#1f8f45" opacity="0.92"/><text x="77.0" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">20</text><rect x="127.1" y="82" width="74" height="104" rx="5" fill="#1f8f45" opacity="0.92"/><text x="164.1" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">60</text><rect x="214.3" y="66" width="74" height="120" rx="5" fill="#27c85a" opacity="0.92"/><text x="251.3" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">250</text><rect x="301.4" y="36" width="74" height="150" rx="5" fill="#27c85a" opacity="0.92"/><text x="338.4" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">500</text><rect x="388.6" y="54" width="74" height="132" rx="5" fill="#27c85a" opacity="0.92"/><text x="425.6" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">2k</text><rect x="475.7" y="90" width="74" height="96" rx="5" fill="#1f8f45" opacity="0.92"/><text x="512.7" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">4k</text><rect x="562.9" y="116" width="74" height="70" rx="5" fill="#1f8f45" opacity="0.92"/><text x="599.9" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">6k</text><rect x="650.0" y="142" width="74" height="44" rx="5" fill="#1f8f45" opacity="0.92"/><text x="687.0" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">20k</text><text x="724" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="end">Hz</text><text x="40" y="30" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="13">20 Hz – 20 kHz</text></svg><figcaption>図2：人の可聴帯域（20Hz–20kHz）と各帯域の聞こえ方。</figcaption></figure>
+<h2>こんなときに使える</h2>
+<ul class="scenes"><li>新しいヘッドホン：まず左右テストで、逆配線や片側無音がないか確認。</li><li>聴力が気になる：スイープでどこまで高域が聞こえるか確認。多くの成人は 15kHz 超で弱くなる。</li><li>練習や編集：BPM タップでテンポを把握し、Soda Music で同じ速さのプレイリストを探す。</li></ul><h2>よくある質問</h2>
+<div class="faq"><h3>人の可聴周波数範囲は？</h3><p>健康な若年者でおよそ 20Hz から 20kHz です。可聴上限は加齢とともに徐々に下がり、これは正常な老化現象です。</p><h3>このツールは音声をアップロードしますか？</h3><p>いいえ。すべての音はブラウザの Web Audio API が端末内で合成・再生します。録音もネット送信もしません。</p><h3>16kHz 以上が聞こえないのは普通ですか？</h3><p>とても一般的です。20〜25 歳を過ぎると上限は 15〜17kHz 程度まで下がり、正常な加齢です。</p><h3>左右テストは何の役に立つ？</h3><p>逆配線、片側無音、定位のずれを素早く発見でき、再生機器のステレオが正常かも確認できます。</p><h3>BPM 計測は正確ですか？</h3><p>タップが多いほど安定します。8 拍を超えると誤差は通常 1 分あたり±1 拍以内です。</p></div><section id="i4data"><h2>2026 聴覚の健康スナップショット（推計）</h2><p>世界保健機関（WHO）は、2050 年までに世界で約 25 億人が何らかの聴力低下を抱え、うち 7 億人超が聴覚リハビリを必要とし、10 億人超の若者が不適切な聴取（大音量・長時間）により回避可能な永続的聴力損失のリスクにさらされると推計しています。これを外挿すると、2026 年でも不適切な聴取の影響を受ける若者は 10 億人規模とみられます。</p><p class="note">（上記は WHO の公開データから外挿した推計で、本サイトの一次実測ではありません。安全な音量とこまめな休憩を促す目的で掲載しています。）</p></section><div class="related"><h2>関連</h2><p>聴きながらテストしたい、測ったテンポをプレイリストに使いたいときは <a href="https://sodamusicapp.com/download/">Soda Music デスクトップ版をダウンロード</a> からクライアントを入手できます。</p></div><div class="src"><h2>出典</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" rel="nofollow" target="_blank">MDN · Web Audio API（本ツールの実装）</a></li><li><a href="https://en.wikipedia.org/wiki/Hearing_range" rel="nofollow" target="_blank">Wikipedia · 人の可聴範囲</a></li><li><a href="https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss" rel="nofollow" target="_blank">WHO · 難聴と聴力損失のデータ</a></li></ul></div>
+</main>
+<footer>本ページのテストはブラウザの Web Audio API で動作します。帯域と可聴範囲は公開の音響工学・聴覚学資料に基づき、2026 の数値は WHO 公開データからの推計です。参考用途のみ。<br><a href="/about-editorial/">編集：林一帆</a> · 編集者とコンテンツ方針について<br>Open-source tool · MIT License</footer>
+</div>
+<script>window.L={"js_idle": "停止中", "js_playing": "再生中", "js_sweeping": "スイープ中…", "js_taps": "タップを続けて…", "js_bpm": "BPM", "lr_left": "左", "lr_right": "右", "lr_both": "両方", "left": "左", "right": "右", "both": "両方", "idle": "停止中", "playing": "再生中", "sweeping": "スイープ中…", "taps": "タップを続けて…", "bpm": "BPM"};</script>
+<script src="/app.js"></script></body></html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="km"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>តេស្តឆានែលឆ្វេង/ស្តាំរបស់កាស · Frequency Sweep · BPM Tap | តេស្តសំឡេងតាមអ៊ីនធឺណិត</title>
+<meta name="description" content="កាសស្តាប់ត្រចៀក និងការធ្វើតេស្តអូឌីយ៉ូតាមអ៊ីនធឺណិតដោយឥតគិតថ្លៃ៖ ការត្រួតពិនិត្យឆានែលឆ្វេង/ស្តាំ ការបោសសម្អាតប្រេកង់ 20Hz–20kHz សម្រាប់ការឆ្លើយតប និងការស្តាប់ ការចុចបញ្ជរ BPM ។ ដំណើរការនៅក្នុងកម្មវិធីរុករកតាមអ៊ីនធឺណិតរបស់អ្នកតាមរយៈ Web Audio — គ្មានអ្វីត្រូវបានផ្ទុកឡើងទេ។">
+<link rel="canonical" href="https://ishabamir.github.io/km/">
+<link rel="alternate" hreflang="zh-Hans" href="https://ishabamir.github.io/">
+<link rel="alternate" hreflang="zh-Hant" href="https://ishabamir.github.io/zh-tw/">
+<link rel="alternate" hreflang="en" href="https://ishabamir.github.io/en/">
+<link rel="alternate" hreflang="ja" href="https://ishabamir.github.io/ja/">
+<link rel="alternate" hreflang="id" href="https://ishabamir.github.io/id/">
+<link rel="alternate" hreflang="th" href="https://ishabamir.github.io/th/">
+<link rel="alternate" hreflang="vi" href="https://ishabamir.github.io/vi/">
+<link rel="alternate" hreflang="ms" href="https://ishabamir.github.io/ms/">
+<link rel="alternate" hreflang="fil" href="https://ishabamir.github.io/fil/">
+<link rel="alternate" hreflang="km" href="https://ishabamir.github.io/km/">
+<link rel="alternate" hreflang="lo" href="https://ishabamir.github.io/lo/">
+<link rel="alternate" hreflang="my" href="https://ishabamir.github.io/my/">
+<link rel="alternate" hreflang="x-default" href="https://ishabamir.github.io/">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "name": "តេស្តសំឡេង និងកាសតាមអ៊ីនធឺណិត",
+   "url": "https://ishabamir.github.io/km/",
+   "applicationCategory": "MultimediaApplication",
+   "operatingSystem": "Web browser",
+   "browserRequirements": "Requires Web Audio API",
+   "inLanguage": "km",
+   "description": "កាសស្តាប់ត្រចៀក និងការធ្វើតេស្តអូឌីយ៉ូតាមអ៊ីនធឺណិតដោយឥតគិតថ្លៃ៖ ការត្រួតពិនិត្យឆានែលឆ្វេង/ស្តាំ ការបោសសម្អាតប្រេកង់ 20Hz–20kHz សម្រាប់ការឆ្លើយតប និងការស្តាប់ ការចុចបញ្ជរ BPM ។ ដំណើរការនៅក្នុងកម្មវិធីរុករកតាមអ៊ីនធឺណិតរបស់អ្នកតាមរយៈ Web Audio — គ្មានអ្វីត្រូវបានផ្ទុកឡើងទេ។",
+   "isAccessibleForFree": true,
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "author": {
+    "@type": "Person",
+    "name": "Lin Yifan",
+    "url": "https://ishabamir.github.io/about-editorial/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "km",
+   "url": "https://ishabamir.github.io/km/",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "តើអ្វីជាជួរនៃការស្តាប់របស់មនុស្ស?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ប្រហែល 20Hz ទៅ 20kHz សម្រាប់មនុស្សវ័យក្មេងដែលមានសុខភាពល្អ។ ដែនកំណត់ខាងលើដែលអាចស្តាប់បានធ្លាក់ចុះបន្តិចម្តងៗទៅតាមអាយុ ដែលជាផ្នែកធម្មតានៃភាពចាស់។"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "តើឧបករណ៍នេះបង្ហោះអូឌីយ៉ូរបស់ខ្ញុំទេ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ទេ សំឡេងទាំងអស់ត្រូវបានសំយោគ និងចាក់ក្នុងមូលដ្ឋានដោយ Web Audio API របស់កម្មវិធីរុករកតាមអ៊ីនធឺណិត។ គ្មានអ្វីត្រូវបានកត់ត្រា ឬផ្ញើតាមបណ្តាញឡើយ។"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "តើវាជារឿងធម្មតាទេដែលមិនឮលើសពី 16kHz?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ជារឿងធម្មតាណាស់។ សម្រាប់មនុស្សភាគច្រើនដែលមានអាយុលើសពី 20 ទៅ 25 ឆ្នាំដែនកំណត់ខាងលើធ្លាក់ដល់ប្រហែល 15 ទៅ 17kHz ដែលជាអាយុធម្មតា។"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "តើតេស្តឆ្វេង/ស្តាំល្អសម្រាប់អ្វី?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "វាបង្ហាញបណ្តាញដែលបានផ្លាស់ប្តូរយ៉ាងឆាប់រហ័ស ទិដ្ឋភាពផ្នែកខាងស្លាប់ ឬរូបភាពនៅកណ្តាល ហើយបញ្ជាក់ពីដំណើរការស្តេរ៉េអូរបស់ឧបករណ៍អ្នក។"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "តើបញ្ជរ BPM ត្រឹមត្រូវប៉ុណ្ណា?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "អ្នកចុចកាន់តែច្រើន វានឹងកាន់តែមានស្ថិរភាព។ ការវាយដំចំនួនប្រាំបីកន្លងមក កំហុសគឺជាធម្មតានៅក្នុងបូកឬដកមួយ BPM ។"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body><div class="wrap"><main>
+<nav class="lang">Language: <a href="/">简体中文</a> · <a href="/zh-tw/">繁體中文</a> · <a href="/en/">English</a> · <a href="/ja/">日本語</a> · <a href="/id/">Bahasa Indonesia</a> · <a href="/th/">ไทย</a> · <a href="/vi/">Tiếng Việt</a> · <a href="/ms/">Bahasa Melayu</a> · <a href="/fil/">Filipino</a> · <strong>ភាសាខ្មែរ</strong> · <a href="/lo/">ພາສາລາວ</a> · <a href="/my/">မြန်မာ</a></nav>
+<h1>តេស្តសំឡេង និងកាសតាមអ៊ីនធឺណិត</h1>
+<figure class="i4png"><picture><source type="image/webp" srcset="/img/cover_km.webp"><img src="/img/cover_km.png" alt="ការបង្ហាញឧបករណ៍តេស្តសំឡេង និងកាសតាមអ៊ីនធឺណិត" fetchpriority="high" width="1120" height="746"></picture><figcaption>រូបភាព៖ កាសស្តាប់ត្រចៀក និងតេស្តអូឌីយ៉ូតាមអ៊ីនធឺណិត (L/R channel · ការបោសសំអាតប្រេកង់ · BPM tap)។</figcaption></figure>
+<p>ប្រើ Web Audio API ដែលភ្ជាប់មកជាមួយរបស់កម្មវិធីរុករកតាមអ៊ីនធឺណិត ដើម្បីសាកល្បងឆានែលឆ្វេង និងស្តាំរបស់កាសស្តាប់ត្រចៀក អូសការឆ្លើយតបប្រេកង់ពី 20Hz ដល់ 20kHz ហើយចុចលើ BPM របស់បទចម្រៀងមួយ។ អ្វីគ្រប់យ៉ាងត្រូវបានសំយោគក្នុងមូលដ្ឋានក្នុងពេលវេលាជាក់ស្តែង — គ្មានការថត គ្មានការបង្ហោះ ត្រូវបានសម្អាតនៅពេលអ្នកបិទទំព័រ។</p>
+<h2>ការធ្វើតេស្តចំនួនបី រួចរាល់ក្នុងការប្រើប្រាស់</h2>
+<div class="tool"><h3>1. ការធ្វើតេស្តឆានែលខាងឆ្វេង / ស្តាំ</h3><p>ចាក់សម្លេងសុទ្ធនៅផ្នែកម្ខាងៗ ដើម្បីបញ្ជាក់ត្រចៀកខាងឆ្វេង ត្រចៀកខាងស្តាំ និងខ្សែស្តេរ៉េអូត្រឹមត្រូវ និងដើម្បីចាប់ប៉ុស្តិ៍ដែលប្តូរ ឬស្លាប់។</p><button id="lr-left">L</button><button id="lr-right">R</button><button id="lr-both">L+R</button><button id="lr-stop" class="ghost">ឈប់</button><span id="lrstate" class="state">មិនលេង</span></div><div class="tool"><h3>2. ការបោសសំអាតប្រេកង់ (20Hz–20kHz)</h3><p>សម្លេងស៊ីនុសមួយរំកិលយ៉ាងរលូនពី 20Hz ដល់ 20kHz ។ ចំណាំប្រេកង់ទាបបំផុត និងខ្ពស់បំផុតដែលអ្នកអាចឮ — វាសាកល្បងទាំងការឆ្លើយតបរបស់កាសរបស់អ្នក និងជួរនៃការស្តាប់របស់អ្នក។</p><button id="sweep-start">ចាប់ផ្តើមបោស</button><button id="sweep-stop" class="ghost">ឈប់</button><span id="sweepstate" class="state">មិនលេង</span><div class="big" id="sweephz">— Hz</div></div><div class="tool"><h3>3. BPM ម៉ាស៊ីនរាប់</h3><p>ប៉ះ​ប៊ូតុង​ជាមួយ​នឹង​ការ​វាយ​ហើយ​វា​គណនា​ចង្វាក់​ជា​ចង្វាក់​ក្នុង​មួយ​នាទី (BPM); ប៉ះប្រាំបីឬច្រើនជាងនេះសម្រាប់ការអានថេរ។</p><button id="bpm-tap">ប៉ះដើម្បីវាយ</button><button id="bpm-reset" class="ghost">កំណត់ឡើងវិញ</button><div class="big" id="bpmval">—</div></div><p class="note">ភាពឯកជន៖ រាល់ការធ្វើតេស្តដំណើរការនៅក្នុងកម្មវិធីរុករករបស់អ្នក។ សំឡេង​ត្រូវ​បាន​សំយោគ​ក្នុង​ពេល​ពិត​ប្រាកដ​ដោយ Web Audio ហើយ​ទាំង​ការ​ចុច ឬ​សំឡេង​ណា​មួយ​មិន​ចាក​ចេញ​ពី​ឧបករណ៍​របស់​អ្នក​ឡើយ។</p>
+<figure class="diagwrap"><svg viewBox="0 0 760 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Web Audio signal chain" class="diag"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#27c85a"/></marker></defs><rect x="2" y="2" width="756" height="146" rx="14" fill="#0d142c"/><rect x="18" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="77" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Source</text><line x1="136" y1="75" x2="164" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="166" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="225" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Oscillator</text><line x1="284" y1="75" x2="312" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="314" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="373" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Gain</text><line x1="432" y1="75" x2="460" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="462" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="521" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Panner</text><line x1="580" y1="75" x2="608" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="610" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="669" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Output</text><text x="380" y="30" fill="#8fa6d8" font-family="Segoe UI,Arial" font-size="13" text-anchor="middle">AudioContext</text></svg><figcaption>រូបភាពទី 1៖ ខ្សែសង្វាក់សញ្ញា Web Audio — ប្រភពហូរតាមរយៈលំយោល ទទួលបាន និងបន្ទះស្តេរ៉េអូទៅកាន់ទិន្នផល។</figcaption></figure>
+<h2>សន្លឹកបន្លំនៃប្រេកង់អូឌីយ៉ូ</h2>
+<table><tr><th>ក្រុមតន្រ្តី</th><th>ជួរ</th><th>អ្វីដែលអ្នកឮ / ប្រើ</th></tr><tr><td>បាសរង</td><td class="mono">20–60 Hz</td><td>មានអារម្មណ៍ rumble នៃការទាត់និងបាស; ច្រើនពេកប្រែទៅជាភក់។</td></tr><tr><td>បាស</td><td class="mono">60–250 Hz</td><td>រាងកាយនៃចង្វាក់និងថាមពល; ប្រាប់អ្នកប្រសិនបើបាសតឹង។</td></tr><tr><td>កណ្តាលទាប</td><td class="mono">250–500 Hz</td><td>ភាពកក់ក្តៅនៃសំលេងនិងឧបករណ៍; boxiness រស់នៅទីនេះ។</td></tr><tr><td>ពាក់កណ្តាល</td><td class="mono">500 Hz–2 kHz</td><td>រាងកាយសំលេងសំខាន់និងវត្តមាន; ជំរុញការលួងលោមក្នុងការស្តាប់យូរ។</td></tr><tr><td>កណ្តាលខ្ពស់។</td><td class="mono">2–4 kHz</td><td>ភាពច្បាស់លាស់និងភាពច្បាស់លាស់; រឹងនិងចោះប្រសិនបើហួសកំរិត។</td></tr><tr><td>វត្តមាន</td><td class="mono">4–6 kHz</td><td>លម្អិតនិងដំណោះស្រាយ; វាយនភាពនៃឧបករណ៍។</td></tr><tr><td>ភាពវៃឆ្លាត</td><td class="mono">6–20 kHz</td><td>ខ្យល់និងផ្កាភ្លើង; ជួរទីមួយបាត់បង់ទៅតាមអាយុ។</td></tr></table>
+<figure class="i4png"><picture><source type="image/webp" srcset="/img/board_km.webp"><img src="/img/board_km.png" alt="រលកប្រេកង់ដែលអាចស្តាប់បានរបស់មនុស្ស និងការបង្ហាញរូបភាព" loading="lazy" width="1120" height="746"></picture><figcaption>រូបភាព៖ ប្រេកង់ 20Hz–20kHz អូសដើម្បីពិនិត្យមើលការឆ្លើយតបរបស់កាស និងជួរនៃការស្តាប់របស់អ្នក។</figcaption></figure>
+<figure class="diagwrap"><svg viewBox="0 0 760 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Human audible frequency spectrum 20Hz to 20kHz" class="diag"><rect x="2" y="2" width="756" height="226" rx="14" fill="#0d142c"/><line x1="40" y1="186" x2="724" y2="186" stroke="#3a4a78" stroke-width="1.5"/><rect x="40.0" y="130" width="74" height="56" rx="5" fill="#1f8f45" opacity="0.92"/><text x="77.0" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">20</text><rect x="127.1" y="82" width="74" height="104" rx="5" fill="#1f8f45" opacity="0.92"/><text x="164.1" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">60</text><rect x="214.3" y="66" width="74" height="120" rx="5" fill="#27c85a" opacity="0.92"/><text x="251.3" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">250</text><rect x="301.4" y="36" width="74" height="150" rx="5" fill="#27c85a" opacity="0.92"/><text x="338.4" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">500</text><rect x="388.6" y="54" width="74" height="132" rx="5" fill="#27c85a" opacity="0.92"/><text x="425.6" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">2k</text><rect x="475.7" y="90" width="74" height="96" rx="5" fill="#1f8f45" opacity="0.92"/><text x="512.7" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">4k</text><rect x="562.9" y="116" width="74" height="70" rx="5" fill="#1f8f45" opacity="0.92"/><text x="599.9" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">6k</text><rect x="650.0" y="142" width="74" height="44" rx="5" fill="#1f8f45" opacity="0.92"/><text x="687.0" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">20k</text><text x="724" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="end">Hz</text><text x="40" y="30" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="13">20 Hz – 20 kHz</text></svg><figcaption>រូបភាពទី 2៖ ក្រុមតន្រ្តីដែលអាចស្តាប់បានរបស់មនុស្ស (20Hz–20kHz) និងរបៀបដែលជួរនីមួយៗមានសំឡេង។</figcaption></figure>
+<h2>នៅពេលដែលវាមកដល់ងាយស្រួល</h2>
+<ul class="scenes"><li>កាសថ្មី៖ ដំណើរការតេស្តឆ្វេង/ស្តាំជាមុនសិន ដើម្បីបញ្ជាក់ថាគ្មានអ្វីត្រូវបានប្តូរ ឬស្លាប់នៅម្ខាង។</li><li>សង្ស័យការបាត់បង់ការស្តាប់៖ ប្រើការអូសដើម្បីមើលថាតើអ្នកនៅតែឮកម្រិតណា — មនុស្សពេញវ័យភាគច្រើនថយចុះលើសពី 15kHz ។</li><li>ការអនុវត្ត ឬកែសម្រួល៖ ចុចលើ BPM ដើម្បីជួសជុលចង្វាក់ បន្ទាប់មកស្វែងរកបញ្ជីចាក់ក្នុងល្បឿនដូចគ្នានៅលើ Soda Music។</li></ul><h2>សំណួរដែលគេសួរញឹកញាប់</h2>
+<div class="faq"><h3>តើអ្វីជាជួរនៃការស្តាប់របស់មនុស្ស?</h3><p>ប្រហែល 20Hz ទៅ 20kHz សម្រាប់មនុស្សវ័យក្មេងដែលមានសុខភាពល្អ។ ដែនកំណត់ខាងលើដែលអាចស្តាប់បានធ្លាក់ចុះបន្តិចម្តងៗទៅតាមអាយុ ដែលជាផ្នែកធម្មតានៃភាពចាស់។</p><h3>តើឧបករណ៍នេះបង្ហោះអូឌីយ៉ូរបស់ខ្ញុំទេ?</h3><p>ទេ សំឡេងទាំងអស់ត្រូវបានសំយោគ និងចាក់ក្នុងមូលដ្ឋានដោយ Web Audio API របស់កម្មវិធីរុករកតាមអ៊ីនធឺណិត។ គ្មានអ្វីត្រូវបានកត់ត្រា ឬផ្ញើតាមបណ្តាញឡើយ។</p><h3>តើវាជារឿងធម្មតាទេដែលមិនឮលើសពី 16kHz?</h3><p>ជារឿងធម្មតាណាស់។ សម្រាប់មនុស្សភាគច្រើនដែលមានអាយុលើសពី 20 ទៅ 25 ឆ្នាំដែនកំណត់ខាងលើធ្លាក់ដល់ប្រហែល 15 ទៅ 17kHz ដែលជាអាយុធម្មតា។</p><h3>តើតេស្តឆ្វេង/ស្តាំល្អសម្រាប់អ្វី?</h3><p>វាបង្ហាញបណ្តាញដែលបានផ្លាស់ប្តូរយ៉ាងឆាប់រហ័ស ទិដ្ឋភាពផ្នែកខាងស្លាប់ ឬរូបភាពនៅកណ្តាល ហើយបញ្ជាក់ពីដំណើរការស្តេរ៉េអូរបស់ឧបករណ៍អ្នក។</p><h3>តើបញ្ជរ BPM ត្រឹមត្រូវប៉ុណ្ណា?</h3><p>អ្នកចុចកាន់តែច្រើន វានឹងកាន់តែមានស្ថិរភាព។ ការវាយដំចំនួនប្រាំបីកន្លងមក កំហុសគឺជាធម្មតានៅក្នុងបូកឬដកមួយ BPM ។</p></div><section id="i4data"><h2>រូបថតសុខភាពការស្តាប់ 2026 (ប៉ាន់ស្មាន)</h2><p>អង្គការសុខភាពពិភពលោក (WHO) ព្យាករថានៅឆ្នាំ 2050 មនុស្សជិត 2.5 ពាន់លាននាក់នឹងបាត់បង់ការស្តាប់កម្រិតណាមួយ ដែលក្នុងនោះជាង 700 លាននាក់នឹងត្រូវការការស្តារការស្តាប់ឡើងវិញ។ មនុស្សវ័យជំទង់ជាង 1 ពាន់លាននាក់ ប្រឈមនឹងហានិភ័យនៃការបាត់បង់ការស្តាប់ជាអចិន្ត្រៃយ៍ ដែលអាចជៀសវាងពីការស្តាប់មិនមានសុវត្ថិភាព (ខ្លាំងពេក យូរពេក)។ លើសពីនេះ ប្រជាជនវ័យក្មេងដែលរងផលប៉ះពាល់ដោយការស្តាប់មិនមានសុវត្ថិភាពក្នុងឆ្នាំ 2026 នៅតែស្ថិតក្នុងលំដាប់នៃចំនួនមួយពាន់លាន។</p><p class="note">(តួលេខខាងលើគឺជាការប៉ាន់ប្រមាណដែលស្រង់ចេញពីទិន្នន័យសាធារណៈរបស់អង្គការសុខភាពពិភពលោក មិនមែនការវាស់វែងដោយដៃផ្ទាល់ដោយគេហទំព័រនេះទេ។ បានបង្ហាញដើម្បីលើកទឹកចិត្តដល់បរិមាណសុវត្ថិភាព និងការសម្រាកទៀងទាត់។ )</p></section><div class="related"><h2>ពាក់ព័ន្ធ</h2><p>ចង់សាកល្បងនៅពេលអ្នកស្តាប់ ឬប្រើចង្វាក់វាស់សម្រាប់បញ្ជីចាក់របស់អ្នក? ឆ្ពោះទៅកាន់ <a href="https://sodamusicapp.com/download/">ទាញយក Soda Music សម្រាប់កុំព្យូទ័រ</a> ដើម្បីទទួលបានម៉ាស៊ីនភ្ញៀវផ្ទៃតុ។</p></div><div class="src"><h2>ប្រភព</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" rel="nofollow" target="_blank">MDN · Web Audio API (របៀបដែលឧបករណ៍នេះដំណើរការ)</a></li><li><a href="https://en.wikipedia.org/wiki/Hearing_range" rel="nofollow" target="_blank">វិគីភីឌា · ជួរនៃការស្តាប់របស់មនុស្ស</a></li><li><a href="https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss" rel="nofollow" target="_blank">អង្គការសុខភាពពិភពលោក · ទិន្នន័យការបាត់បង់ការស្តាប់ និងថ្លង់</a></li></ul></div>
+</main>
+<footer>ការធ្វើតេស្តទាំងនេះដំណើរការលើ Web Audio API របស់កម្មវិធីរុករកតាមអ៊ីនធឺណិត។ ក្រុមតន្រ្តី និងជួរដែលអាចស្តាប់បានអនុវត្តតាមឯកសារយោងវិស្វកម្មសំឡេងសាធារណៈ និងសោតទស្សន៍ ហើយតួលេខឆ្នាំ 2026 ត្រូវបានប៉ាន់ស្មានពីទិន្នន័យសាធារណៈរបស់អង្គការសុខភាពពិភពលោក - សម្រាប់ជាឯកសារយោងតែប៉ុណ្ណោះ។<br><a href="/about-editorial/">និពន្ធទំនុកច្រៀង៖ Lin Yifan</a> · អំពីកម្មវិធីនិពន្ធ និងគោលការណ៍ខ្លឹមសារ<br>Open-source tool · MIT License</footer>
+</div>
+<script>window.L={"js_idle": "មិនលេង", "js_playing": "ឥឡូវនេះកំពុងលេង", "js_sweeping": "ភាពញឹកញាប់នៃការបោសសំអាត…", "js_taps": "បន្ត​ចុច…", "js_bpm": "BPM", "lr_left": "L", "lr_right": "R", "lr_both": "L+R", "left": "L", "right": "R", "both": "L+R", "idle": "មិនលេង", "playing": "ឥឡូវនេះកំពុងលេង", "sweeping": "ភាពញឹកញាប់នៃការបោសសំអាត…", "taps": "បន្ត​ចុច…", "bpm": "BPM"};</script>
+<script src="/app.js"></script></body></html>

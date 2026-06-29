@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="th"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>การทดสอบช่องสัญญาณซ้าย/ขวาของหูฟัง · การกวาดความถี่ · แตะ BPM | ทดสอบเสียงออนไลน์</title>
+<meta name="description" content="การทดสอบหูฟังและเสียงออนไลน์ฟรี: ตรวจสอบช่องซ้าย/ขวา, การกวาดความถี่ 20Hz–20kHz สำหรับการตอบสนองและการได้ยิน, ตัวนับการแตะ BPM ทำงานในเบราว์เซอร์ของคุณผ่าน Web Audio — ไม่มีการอัปโหลดอะไรเลย">
+<link rel="canonical" href="https://ishabamir.github.io/th/">
+<link rel="alternate" hreflang="zh-Hans" href="https://ishabamir.github.io/">
+<link rel="alternate" hreflang="zh-Hant" href="https://ishabamir.github.io/zh-tw/">
+<link rel="alternate" hreflang="en" href="https://ishabamir.github.io/en/">
+<link rel="alternate" hreflang="ja" href="https://ishabamir.github.io/ja/">
+<link rel="alternate" hreflang="id" href="https://ishabamir.github.io/id/">
+<link rel="alternate" hreflang="th" href="https://ishabamir.github.io/th/">
+<link rel="alternate" hreflang="vi" href="https://ishabamir.github.io/vi/">
+<link rel="alternate" hreflang="ms" href="https://ishabamir.github.io/ms/">
+<link rel="alternate" hreflang="fil" href="https://ishabamir.github.io/fil/">
+<link rel="alternate" hreflang="km" href="https://ishabamir.github.io/km/">
+<link rel="alternate" hreflang="lo" href="https://ishabamir.github.io/lo/">
+<link rel="alternate" hreflang="my" href="https://ishabamir.github.io/my/">
+<link rel="alternate" hreflang="x-default" href="https://ishabamir.github.io/">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "name": "การทดสอบหูฟังและเสียงออนไลน์",
+   "url": "https://ishabamir.github.io/th/",
+   "applicationCategory": "MultimediaApplication",
+   "operatingSystem": "Web browser",
+   "browserRequirements": "Requires Web Audio API",
+   "inLanguage": "th",
+   "description": "การทดสอบหูฟังและเสียงออนไลน์ฟรี: ตรวจสอบช่องซ้าย/ขวา, การกวาดความถี่ 20Hz–20kHz สำหรับการตอบสนองและการได้ยิน, ตัวนับการแตะ BPM ทำงานในเบราว์เซอร์ของคุณผ่าน Web Audio — ไม่มีการอัปโหลดอะไรเลย",
+   "isAccessibleForFree": true,
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "author": {
+    "@type": "Person",
+    "name": "Lin Yifan",
+    "url": "https://ishabamir.github.io/about-editorial/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "th",
+   "url": "https://ishabamir.github.io/th/",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "ระยะการได้ยินของมนุษย์คือเท่าไร?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ประมาณ 20Hz ถึง 20kHz สำหรับคนหนุ่มสาวที่มีสุขภาพดี ขีดจำกัดบนที่สามารถได้ยินได้จะค่อยๆ ลดลงตามอายุ ซึ่งเป็นเรื่องปกติของวัยชรา"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "เครื่องมือนี้อัปโหลดเสียงของฉันหรือไม่",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ไม่ เสียงทั้งหมดถูกสังเคราะห์และเล่นในเครื่องโดย Web Audio API ของเบราว์เซอร์ ไม่มีการบันทึกหรือส่งผ่านเครือข่าย"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "เป็นเรื่องปกติหรือไม่ที่จะไม่ได้ยินเสียงที่สูงกว่า 16kHz?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "เป็นเรื่องธรรมดามาก สำหรับคนส่วนใหญ่ที่มีอายุ 20 ถึง 25 ปี ขีดจำกัดสูงสุดจะลดลงเหลือประมาณ 15 ถึง 17kHz ซึ่งเป็นช่วงวัยปกติ"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "การทดสอบซ้าย/ขวามีประโยชน์อย่างไร?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "โดยจะเผยให้เห็นช่องสัญญาณที่สลับกัน ภาพด้านตายหรือภาพที่ไม่อยู่ตรงกลางอย่างรวดเร็ว และยืนยันว่าระบบสเตอริโอของอุปกรณ์ของคุณใช้งานได้"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ตัวนับ BPM มีความแม่นยำแค่ไหน?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ยิ่งคุณแตะมากเท่าไรก็ยิ่งมั่นคงมากขึ้นเท่านั้น แปดครั้งที่ผ่านมา ข้อผิดพลาดมักจะอยู่ภายในบวกหรือลบหนึ่ง BPM"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body><div class="wrap"><main>
+<nav class="lang">Language: <a href="/">简体中文</a> · <a href="/zh-tw/">繁體中文</a> · <a href="/en/">English</a> · <a href="/ja/">日本語</a> · <a href="/id/">Bahasa Indonesia</a> · <strong>ไทย</strong> · <a href="/vi/">Tiếng Việt</a> · <a href="/ms/">Bahasa Melayu</a> · <a href="/fil/">Filipino</a> · <a href="/km/">ភាសាខ្មែរ</a> · <a href="/lo/">ພາສາລາວ</a> · <a href="/my/">မြန်မာ</a></nav>
+<h1>การทดสอบหูฟังและเสียงออนไลน์</h1>
+<figure class="i4png"><picture><source type="image/webp" srcset="/img/cover_th.webp"><img src="/img/cover_th.png" alt="ภาพประกอบเครื่องมือทดสอบหูฟังและเสียงออนไลน์" fetchpriority="high" width="1120" height="746"></picture><figcaption>รูป: การทดสอบหูฟังและเสียงออนไลน์ (ช่อง L/R · การกวาดความถี่ · การแตะ BPM)</figcaption></figure>
+<p>ใช้ Web Audio API ในตัวของเบราว์เซอร์เพื่อทดสอบช่องสัญญาณซ้ายและขวาของหูฟังของคุณ กวาดการตอบสนองความถี่จาก 20Hz ถึง 20kHz และแตะ BPM ของเพลง ทุกอย่างถูกสังเคราะห์ในเครื่องแบบเรียลไทม์ ไม่มีการบันทึก ไม่มีการอัพโหลด และถูกล้างเมื่อคุณปิดเพจ</p>
+<h2>การทดสอบสามรายการพร้อมใช้งาน</h2>
+<div class="tool"><h3>1. ทดสอบช่องสัญญาณซ้าย/ขวา</h3><p>เล่นเสียงบริสุทธิ์ในแต่ละด้านเพื่อยืนยันว่าหูซ้าย หูขวา และสายไฟสเตอริโอถูกต้อง และเพื่อจับช่องสัญญาณที่สลับหรือขาด</p><button id="lr-left">L</button><button id="lr-right">R</button><button id="lr-both">L+R</button><button id="lr-stop" class="ghost">หยุด</button><span id="lrstate" class="state">ไม่ได้เล่น</span></div><div class="tool"><h3>2. การกวาดความถี่ (20Hz–20kHz)</h3><p>โทนเสียงไซน์เลื่อนอย่างราบรื่นตั้งแต่ 20Hz ถึง 20kHz สังเกตความถี่ต่ำสุดและสูงสุดที่คุณได้ยิน โดยจะทดสอบทั้งการตอบสนองของหูฟังและระยะการได้ยินของคุณเอง</p><button id="sweep-start">เริ่มกวาด</button><button id="sweep-stop" class="ghost">หยุด</button><span id="sweepstate" class="state">ไม่ได้เล่น</span><div class="big" id="sweephz">— Hz</div></div><div class="tool"><h3>3. ตัวนับการแตะ BPM</h3><p>แตะปุ่มพร้อมกับจังหวะและคำนวณจังหวะเป็นจังหวะต่อนาที (BPM) แตะแปดจังหวะขึ้นไปเพื่อการอ่านที่มั่นคง</p><button id="bpm-tap">แตะเพื่อจังหวะ</button><button id="bpm-reset" class="ghost">รีเซ็ต</button><div class="big" id="bpmval">—</div></div><p class="note">ความเป็นส่วนตัว: ทุกการทดสอบทำงานภายในเบราว์เซอร์ของคุณ เสียงจะถูกสังเคราะห์แบบเรียลไทม์โดย Web Audio และการแตะและเสียงใดๆ ของคุณจะไม่ออกจากอุปกรณ์ของคุณ</p>
+<figure class="diagwrap"><svg viewBox="0 0 760 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Web Audio signal chain" class="diag"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#27c85a"/></marker></defs><rect x="2" y="2" width="756" height="146" rx="14" fill="#0d142c"/><rect x="18" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="77" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Source</text><line x1="136" y1="75" x2="164" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="166" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="225" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Oscillator</text><line x1="284" y1="75" x2="312" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="314" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="373" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Gain</text><line x1="432" y1="75" x2="460" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="462" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="521" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Panner</text><line x1="580" y1="75" x2="608" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="610" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="669" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Output</text><text x="380" y="30" fill="#8fa6d8" font-family="Segoe UI,Arial" font-size="13" text-anchor="middle">AudioContext</text></svg><figcaption>รูปที่ 1: สายสัญญาณ Web Audio - แหล่งที่มาไหลผ่านออสซิลเลเตอร์ อัตราขยายและแพนเนอร์สเตอริโอไปยังเอาต์พุต</figcaption></figure>
+<h2>เอกสารสรุปย่านความถี่เสียง</h2>
+<table><tr><th>วงดนตรี</th><th>พิสัย</th><th>สิ่งที่คุณได้ยิน/ใช้</th></tr><tr><td>ซับเบส</td><td class="mono">20–60 Hz</td><td>รู้สึกถึงเสียงเตะและเสียงเบสดังก้อง มากเกินไปกลายเป็นโคลน</td></tr><tr><td>เบส</td><td class="mono">60–250 Hz</td><td>ร่างกายของจังหวะและพลัง บอกคุณว่าเบสแน่นหรือไม่</td></tr><tr><td>เสียงกลางต่ำ</td><td class="mono">250–500 Hz</td><td>ความอบอุ่นของเสียงและเครื่องดนตรี ความ Boxiness อาศัยอยู่ที่นี่</td></tr><tr><td>เสียงกลาง</td><td class="mono">500 Hz–2 kHz</td><td>เนื้อร้องหลักและการปรากฏตัว; ขับความสบายในการฟังเป็นเวลานาน</td></tr><tr><td>เสียงกลางสูง</td><td class="mono">2–4 kHz</td><td>ความชัดเจนและการเปล่งเสียง รุนแรงและแหลมคมหากทำมากเกินไป</td></tr><tr><td>การมีอยู่</td><td class="mono">4–6 kHz</td><td>รายละเอียดและความละเอียด พื้นผิวของเครื่องดนตรี</td></tr><tr><td>ความฉลาด</td><td class="mono">6–20 kHz</td><td>อากาศและประกายไฟ; ช่วงแรกหายไปตามอายุ</td></tr></table>
+<figure class="i4png"><picture><source type="image/webp" srcset="/img/board_th.webp"><img src="/img/board_th.png" alt="คลื่นความถี่ที่มนุษย์ได้ยินและภาพประกอบกวาด" loading="lazy" width="1120" height="746"></picture><figcaption>รูป: การกวาดความถี่ 20Hz–20kHz เพื่อตรวจสอบการตอบสนองของหูฟังและระยะการได้ยินของคุณ</figcaption></figure>
+<figure class="diagwrap"><svg viewBox="0 0 760 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Human audible frequency spectrum 20Hz to 20kHz" class="diag"><rect x="2" y="2" width="756" height="226" rx="14" fill="#0d142c"/><line x1="40" y1="186" x2="724" y2="186" stroke="#3a4a78" stroke-width="1.5"/><rect x="40.0" y="130" width="74" height="56" rx="5" fill="#1f8f45" opacity="0.92"/><text x="77.0" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">20</text><rect x="127.1" y="82" width="74" height="104" rx="5" fill="#1f8f45" opacity="0.92"/><text x="164.1" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">60</text><rect x="214.3" y="66" width="74" height="120" rx="5" fill="#27c85a" opacity="0.92"/><text x="251.3" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">250</text><rect x="301.4" y="36" width="74" height="150" rx="5" fill="#27c85a" opacity="0.92"/><text x="338.4" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">500</text><rect x="388.6" y="54" width="74" height="132" rx="5" fill="#27c85a" opacity="0.92"/><text x="425.6" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">2k</text><rect x="475.7" y="90" width="74" height="96" rx="5" fill="#1f8f45" opacity="0.92"/><text x="512.7" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">4k</text><rect x="562.9" y="116" width="74" height="70" rx="5" fill="#1f8f45" opacity="0.92"/><text x="599.9" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">6k</text><rect x="650.0" y="142" width="74" height="44" rx="5" fill="#1f8f45" opacity="0.92"/><text x="687.0" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">20k</text><text x="724" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="end">Hz</text><text x="40" y="30" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="13">20 Hz – 20 kHz</text></svg><figcaption>รูปที่ 2: แถบความถี่ที่มนุษย์ได้ยิน (20Hz–20kHz) และลักษณะเสียงแต่ละช่วง</figcaption></figure>
+<h2>เมื่อมีประโยชน์</h2>
+<ul class="scenes"><li>หูฟังใหม่: ทำการทดสอบด้านซ้าย/ขวาก่อนเพื่อยืนยันว่าไม่มีสิ่งใดถูกสลับหรือเสียที่ด้านใดด้านหนึ่ง</li><li>สงสัยว่าสูญเสียการได้ยิน: ใช้การกวาดเพื่อดูว่าคุณยังได้ยินอยู่สูงแค่ไหน — ผู้ใหญ่ส่วนใหญ่จะจางหายไปเหนือ 15kHz</li><li>ฝึกฝนหรือแก้ไข: แตะ BPM เพื่อแก้ไขจังหวะ จากนั้นค้นหาเพลย์ลิสต์ที่ความเร็วเท่ากันบน Soda Music</li></ul><h2>คำถามที่พบบ่อย</h2>
+<div class="faq"><h3>ระยะการได้ยินของมนุษย์คือเท่าไร?</h3><p>ประมาณ 20Hz ถึง 20kHz สำหรับคนหนุ่มสาวที่มีสุขภาพดี ขีดจำกัดบนที่สามารถได้ยินได้จะค่อยๆ ลดลงตามอายุ ซึ่งเป็นเรื่องปกติของวัยชรา</p><h3>เครื่องมือนี้อัปโหลดเสียงของฉันหรือไม่</h3><p>ไม่ เสียงทั้งหมดถูกสังเคราะห์และเล่นในเครื่องโดย Web Audio API ของเบราว์เซอร์ ไม่มีการบันทึกหรือส่งผ่านเครือข่าย</p><h3>เป็นเรื่องปกติหรือไม่ที่จะไม่ได้ยินเสียงที่สูงกว่า 16kHz?</h3><p>เป็นเรื่องธรรมดามาก สำหรับคนส่วนใหญ่ที่มีอายุ 20 ถึง 25 ปี ขีดจำกัดสูงสุดจะลดลงเหลือประมาณ 15 ถึง 17kHz ซึ่งเป็นช่วงวัยปกติ</p><h3>การทดสอบซ้าย/ขวามีประโยชน์อย่างไร?</h3><p>โดยจะเผยให้เห็นช่องสัญญาณที่สลับกัน ภาพด้านตายหรือภาพที่ไม่อยู่ตรงกลางอย่างรวดเร็ว และยืนยันว่าระบบสเตอริโอของอุปกรณ์ของคุณใช้งานได้</p><h3>ตัวนับ BPM มีความแม่นยำแค่ไหน?</h3><p>ยิ่งคุณแตะมากเท่าไรก็ยิ่งมั่นคงมากขึ้นเท่านั้น แปดครั้งที่ผ่านมา ข้อผิดพลาดมักจะอยู่ภายในบวกหรือลบหนึ่ง BPM</p></div><section id="i4data"><h2>ภาพรวมด้านสุขภาพการได้ยินปี 2026 (ประมาณการ)</h2><p>องค์การอนามัยโลก (WHO) คาดการณ์ว่าภายในปี 2593 ผู้คนเกือบ 2.5 พันล้านคนจะสูญเสียการได้ยินในระดับหนึ่ง โดยในจำนวนนี้มากกว่า 700 ล้านคนจะต้องได้รับการฟื้นฟูการได้ยิน คนหนุ่มสาวมากกว่า 1 พันล้านคนมีความเสี่ยงต่อการสูญเสียการได้ยินอย่างถาวรและหลีกเลี่ยงได้จากการฟังที่ไม่ปลอดภัย (ดังเกินไป ยาวเกินไป) จากการคาดการณ์ ประชากรวัยรุ่นที่ได้รับผลกระทบจากการฟังอย่างไม่ปลอดภัยในปี 2569 ยังคงอยู่ในระดับพันล้านคน</p><p class="note">(ตัวเลขข้างต้นเป็นการประมาณการที่คาดการณ์จากข้อมูลสาธารณะของ WHO ไม่ใช่การวัดผลโดยตรงโดยไซต์นี้ แสดงให้เห็นเพื่อส่งเสริมให้มีปริมาณที่ปลอดภัยและการหยุดพักอย่างสม่ำเสมอ)</p></section><div class="related"><h2>ที่เกี่ยวข้อง</h2><p>ต้องการทดสอบในขณะที่คุณฟังหรือใช้จังหวะที่วัดได้สำหรับเพลย์ลิสต์ของคุณหรือไม่? มุ่งหน้าไป <a href="https://sodamusicapp.com/download/">ดาวน์โหลด Soda Music สำหรับเดสก์ท็อป</a> เพื่อรับไคลเอนต์เดสก์ท็อป</p></div><div class="src"><h2>แหล่งที่มา</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" rel="nofollow" target="_blank">MDN · Web Audio API (เครื่องมือนี้ทำงานอย่างไร)</a></li><li><a href="https://en.wikipedia.org/wiki/Hearing_range" rel="nofollow" target="_blank">วิกิพีเดีย · ระยะการได้ยินของมนุษย์</a></li><li><a href="https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss" rel="nofollow" target="_blank">WHO · ข้อมูลอาการหูหนวกและการสูญเสียการได้ยิน</a></li></ul></div>
+</main>
+<footer>การทดสอบเหล่านี้ทำงานบน Web Audio API ของเบราว์เซอร์ วงดนตรีและระยะการได้ยินเป็นไปตามการอ้างอิงด้านวิศวกรรมเสียงและโสตสัมผัสวิทยาสาธารณะ และตัวเลขปี 2026 ประเมินจากข้อมูลสาธารณะของ WHO เพื่อการอ้างอิงเท่านั้น<br><a href="/about-editorial/">บรรณาธิการ: หลินอี้ฟาน</a> · เกี่ยวกับบรรณาธิการและนโยบายเนื้อหา<br>Open-source tool · MIT License</footer>
+</div>
+<script>window.L={"js_idle": "ไม่ได้เล่น", "js_playing": "กำลังเล่นอยู่", "js_sweeping": "ความถี่ในการกวาด…", "js_taps": "แตะต่อไป...", "js_bpm": "บีพีเอ็ม", "lr_left": "L", "lr_right": "R", "lr_both": "L+R", "left": "L", "right": "R", "both": "L+R", "idle": "ไม่ได้เล่น", "playing": "กำลังเล่นอยู่", "sweeping": "ความถี่ในการกวาด…", "taps": "แตะต่อไป...", "bpm": "บีพีเอ็ม"};</script>
+<script src="/app.js"></script></body></html>

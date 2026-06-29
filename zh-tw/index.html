@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>耳機左右聲道測試·頻率掃描·BPM 節拍計數｜線上音訊測試工具</title>
+<meta name="description" content="免費線上耳機/音訊測試：左右聲道辨向、20Hz–20kHz 頻率掃描測頻響與聽力、BPM 節拍計數。純瀏覽器 Web Audio 執行，音訊不上傳。">
+<link rel="canonical" href="https://ishabamir.github.io/zh-tw/">
+<link rel="alternate" hreflang="zh-Hans" href="https://ishabamir.github.io/">
+<link rel="alternate" hreflang="zh-Hant" href="https://ishabamir.github.io/zh-tw/">
+<link rel="alternate" hreflang="en" href="https://ishabamir.github.io/en/">
+<link rel="alternate" hreflang="ja" href="https://ishabamir.github.io/ja/">
+<link rel="alternate" hreflang="id" href="https://ishabamir.github.io/id/">
+<link rel="alternate" hreflang="th" href="https://ishabamir.github.io/th/">
+<link rel="alternate" hreflang="vi" href="https://ishabamir.github.io/vi/">
+<link rel="alternate" hreflang="ms" href="https://ishabamir.github.io/ms/">
+<link rel="alternate" hreflang="fil" href="https://ishabamir.github.io/fil/">
+<link rel="alternate" hreflang="km" href="https://ishabamir.github.io/km/">
+<link rel="alternate" hreflang="lo" href="https://ishabamir.github.io/lo/">
+<link rel="alternate" hreflang="my" href="https://ishabamir.github.io/my/">
+<link rel="alternate" hreflang="x-default" href="https://ishabamir.github.io/">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "name": "耳機與音訊線上測試",
+   "url": "https://ishabamir.github.io/zh-tw/",
+   "applicationCategory": "MultimediaApplication",
+   "operatingSystem": "Web browser",
+   "browserRequirements": "Requires Web Audio API",
+   "inLanguage": "zh-Hant",
+   "description": "免費線上耳機/音訊測試：左右聲道辨向、20Hz–20kHz 頻率掃描測頻響與聽力、BPM 節拍計數。純瀏覽器 Web Audio 執行，音訊不上傳。",
+   "isAccessibleForFree": true,
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "author": {
+    "@type": "Person",
+    "name": "Lin Yifan",
+    "url": "https://ishabamir.github.io/about-editorial/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "zh-Hant",
+   "url": "https://ishabamir.github.io/zh-tw/",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "人耳能聽到的頻率範圍是多少？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "健康年輕人大約 20Hz 到 20kHz。隨著年齡增長，可聞的高頻上限會逐步下降，這是正常的老化現象。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "這個工具會上傳我的音訊嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不會。所有聲音由瀏覽器的 Web Audio API 在本地實時合成與播放，不錄音、不聯網上傳。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "聽不到 16kHz 以上正常嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "很常見。多數人過了 20 到 25 歲，可聞上限會降到 15 到 17kHz 左右，屬於正常老化。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "左右聲道測試有什麼用？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "能快速發現耳機接反、單邊無聲、聲像偏移等問題，也能確認播放裝置的立體聲是否正常。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "BPM 計數準不準？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "跟拍越多越穩。連續點 8 拍以上，誤差通常在每分鐘正負 1 拍以內。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body><div class="wrap"><main>
+<nav class="lang">Language: <a href="/">简体中文</a> · <strong>繁體中文</strong> · <a href="/en/">English</a> · <a href="/ja/">日本語</a> · <a href="/id/">Bahasa Indonesia</a> · <a href="/th/">ไทย</a> · <a href="/vi/">Tiếng Việt</a> · <a href="/ms/">Bahasa Melayu</a> · <a href="/fil/">Filipino</a> · <a href="/km/">ភាសាខ្មែរ</a> · <a href="/lo/">ພາສາລາວ</a> · <a href="/my/">မြန်မာ</a></nav>
+<h1>耳機與音訊線上測試工具</h1>
+<figure class="i4png"><picture><source type="image/webp" srcset="/img/cover_tw.webp"><img src="/img/cover_tw.png" alt="耳機與音訊線上測試工具示意圖" fetchpriority="high" width="1120" height="746"></picture><figcaption>圖：耳機與音訊線上測試（左右聲道 · 頻率掃描 · BPM 節拍）</figcaption></figure>
+<p>用瀏覽器內建的 Web Audio API 直接測試耳機左右聲道、掃描 20Hz 到 20kHz 的頻率響應、數出歌曲的 BPM。全部在本地實時合成，不錄音、不上傳，關掉頁面即清空。</p>
+<h2>三個測試，開啟即用</h2>
+<div class="tool"><h3>1. 左右聲道測試</h3><p>依次播放純音，確認左耳、右耳與立體聲接線是否正確，排查接反或單邊無聲。</p><button id="lr-left">左聲道</button><button id="lr-right">右聲道</button><button id="lr-both">雙聲道</button><button id="lr-stop" class="ghost">停止</button><span id="lrstate" class="state">未播放</span></div><div class="tool"><h3>2. 頻率掃描（20Hz–20kHz）</h3><p>正弦波從 20Hz 平滑掃到 20kHz，記下你能聽到的最低與最高頻率，既測耳機頻響也測自己的聽力範圍。</p><button id="sweep-start">開始掃描</button><button id="sweep-stop" class="ghost">停止</button><span id="sweepstate" class="state">未播放</span><div class="big" id="sweephz">— Hz</div></div><div class="tool"><h3>3. BPM 節拍計數</h3><p>跟著音樂的節拍點按鈕，自動算出每分鐘節拍數（BPM）；連續點 8 拍以上更穩。</p><button id="bpm-tap">跟拍點這裡</button><button id="bpm-reset" class="ghost">重置</button><div class="big" id="bpmval">—</div></div><p class="note">隱私：所有測試都在你的瀏覽器裡完成，聲音由 Web Audio 實時合成，點選與音訊資料都不會離開本機。</p>
+<figure class="diagwrap"><svg viewBox="0 0 760 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Web Audio signal chain" class="diag"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#27c85a"/></marker></defs><rect x="2" y="2" width="756" height="146" rx="14" fill="#0d142c"/><rect x="18" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="77" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Source</text><line x1="136" y1="75" x2="164" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="166" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="225" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Oscillator</text><line x1="284" y1="75" x2="312" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="314" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="373" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Gain</text><line x1="432" y1="75" x2="460" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="462" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="521" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Panner</text><line x1="580" y1="75" x2="608" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="610" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="669" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Output</text><text x="380" y="30" fill="#8fa6d8" font-family="Segoe UI,Arial" font-size="13" text-anchor="middle">AudioContext</text></svg><figcaption>圖1：Web Audio 訊號鏈——音源經振盪器、增益、聲道平移後到達輸出。</figcaption></figure>
+<h2>音訊頻段速查表</h2>
+<table><tr><th>頻段</th><th>頻率範圍</th><th>聽感與用途</th></tr><tr><td>超低頻</td><td class="mono">20–60 Hz</td><td>鼓與低音的體感震動，過強會糊成一團</td></tr><tr><td>低頻</td><td class="mono">60–250 Hz</td><td>節奏與力量感的主體，決定低音是否紮實</td></tr><tr><td>中低頻</td><td class="mono">250–500 Hz</td><td>人聲與樂器的厚度，渾濁感常出在這裡</td></tr><tr><td>中頻</td><td class="mono">500 Hz–2 kHz</td><td>人聲主體與臨場感，最影響耐聽度</td></tr><tr><td>中高頻</td><td class="mono">2–4 kHz</td><td>清晰度與咬字，過強會發尖刺耳</td></tr><tr><td>高頻</td><td class="mono">4–6 kHz</td><td>細節與解析力，樂器的質感</td></tr><tr><td>極高頻</td><td class="mono">6–20 kHz</td><td>空氣感與亮度，隨年齡最先丟失</td></tr></table>
+<figure class="i4png"><picture><source type="image/webp" srcset="/img/board_tw.webp"><img src="/img/board_tw.png" alt="人耳可聞頻段與頻率掃描示意圖" loading="lazy" width="1120" height="746"></picture><figcaption>圖：20Hz–20kHz 頻率掃描，檢驗耳機頻響與個人聽力範圍。</figcaption></figure>
+<figure class="diagwrap"><svg viewBox="0 0 760 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Human audible frequency spectrum 20Hz to 20kHz" class="diag"><rect x="2" y="2" width="756" height="226" rx="14" fill="#0d142c"/><line x1="40" y1="186" x2="724" y2="186" stroke="#3a4a78" stroke-width="1.5"/><rect x="40.0" y="130" width="74" height="56" rx="5" fill="#1f8f45" opacity="0.92"/><text x="77.0" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">20</text><rect x="127.1" y="82" width="74" height="104" rx="5" fill="#1f8f45" opacity="0.92"/><text x="164.1" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">60</text><rect x="214.3" y="66" width="74" height="120" rx="5" fill="#27c85a" opacity="0.92"/><text x="251.3" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">250</text><rect x="301.4" y="36" width="74" height="150" rx="5" fill="#27c85a" opacity="0.92"/><text x="338.4" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">500</text><rect x="388.6" y="54" width="74" height="132" rx="5" fill="#27c85a" opacity="0.92"/><text x="425.6" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">2k</text><rect x="475.7" y="90" width="74" height="96" rx="5" fill="#1f8f45" opacity="0.92"/><text x="512.7" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">4k</text><rect x="562.9" y="116" width="74" height="70" rx="5" fill="#1f8f45" opacity="0.92"/><text x="599.9" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">6k</text><rect x="650.0" y="142" width="74" height="44" rx="5" fill="#1f8f45" opacity="0.92"/><text x="687.0" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">20k</text><text x="724" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="end">Hz</text><text x="40" y="30" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="13">20 Hz – 20 kHz</text></svg><figcaption>圖2：人耳可聞頻段（20Hz–20kHz）與各頻段的聽感分佈。</figcaption></figure>
+<h2>什麼時候用得上</h2>
+<ul class="scenes"><li>新耳機到手：先做左右聲道測試，確認沒接反、沒有單邊無聲。</li><li>懷疑聽力下降：用頻率掃描看高頻還能聽到多少，多數成年人 15kHz 以上會變弱。</li><li>練歌或剪輯：用 BPM 計數快速定曲速，再去汽水音樂找同速歌單。</li></ul><h2>常見問題</h2>
+<div class="faq"><h3>人耳能聽到的頻率範圍是多少？</h3><p>健康年輕人大約 20Hz 到 20kHz。隨著年齡增長，可聞的高頻上限會逐步下降，這是正常的老化現象。</p><h3>這個工具會上傳我的音訊嗎？</h3><p>不會。所有聲音由瀏覽器的 Web Audio API 在本地實時合成與播放，不錄音、不聯網上傳。</p><h3>聽不到 16kHz 以上正常嗎？</h3><p>很常見。多數人過了 20 到 25 歲，可聞上限會降到 15 到 17kHz 左右，屬於正常老化。</p><h3>左右聲道測試有什麼用？</h3><p>能快速發現耳機接反、單邊無聲、聲像偏移等問題，也能確認播放裝置的立體聲是否正常。</p><h3>BPM 計數準不準？</h3><p>跟拍越多越穩。連續點 8 拍以上，誤差通常在每分鐘正負 1 拍以內。</p></div><section id="i4data"><h2>2026 聽力健康速覽（估算）</h2><p>世界衛生組織（WHO）估計，到 2050 年全球將有近 25 億人出現某種程度的聽力下降，其中逾 7 億人需要聽力康復服務；超過 10 億年輕人因不安全用耳（音量過大、時間過長）面臨可避免的聽力損失風險。據此外推，2026 年全球受不安全用耳影響的青年人群仍在 10 億量級。</p><p class="note">（以上為基於 WHO 公開資料的估算，非本站一手實測，用於科普提示安全音量與定時休息。）</p></section><div class="related"><h2>相關</h2><p>想邊聽歌邊測試、或把測好的曲速用在歌單上？可前往 <a href="https://sodamusicapp.com/download/">汽水音樂電腦版下載</a> 獲取桌面客戶端。</p></div><div class="src"><h2>資料來源</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" rel="nofollow" target="_blank">MDN · Web Audio API（本工具實現）</a></li><li><a href="https://en.wikipedia.org/wiki/Hearing_range" rel="nofollow" target="_blank">Wikipedia · 可聞頻率範圍</a></li><li><a href="https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss" rel="nofollow" target="_blank">WHO · 聽力損失與防護資料</a></li></ul></div>
+</main>
+<footer>本頁測試由瀏覽器 Web Audio API 實現；頻段與可聞範圍參考公開音訊工程與聽力學資料，2026 估算基於 WHO 公開資料，僅供參考。<br><a href="/about-editorial/">編輯：林一帆</a> · 關於編輯與內容方針<br>Open-source tool · MIT License</footer>
+</div>
+<script>window.L={"js_idle": "未播放", "js_playing": "播放中", "js_sweeping": "掃描中…", "js_taps": "繼續跟拍…", "js_bpm": "BPM", "lr_left": "左聲道", "lr_right": "右聲道", "lr_both": "雙聲道", "left": "左聲道", "right": "右聲道", "both": "雙聲道", "idle": "未播放", "playing": "播放中", "sweeping": "掃描中…", "taps": "繼續跟拍…", "bpm": "BPM"};</script>
+<script src="/app.js"></script></body></html>

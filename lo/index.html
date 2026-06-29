@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="lo"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ການທົດສອບຊ່ອງຫູຟັງຊ້າຍ/ຂວາ · ການກວາດຄວາມຖີ່ · BPM Tap | ການທົດສອບສຽງອອນໄລນ໌</title>
+<meta name="description" content="ທົດສອບຫູຟັງ ແລະສຽງອອນໄລນ໌ຟຣີ: ການກວດສອບຊ່ອງຊ້າຍ/ຂວາ, ການກວາດຄວາມຖີ່ 20Hz–20kHz ສຳລັບການຕອບສະໜອງແລະການໄດ້ຍິນ, BPM tap counter. ແລ່ນຢູ່ໃນຕົວທ່ອງເວັບຂອງທ່ານຜ່ານ Web Audio — ບໍ່ມີຫຍັງຖືກອັບໂຫລດ.">
+<link rel="canonical" href="https://ishabamir.github.io/lo/">
+<link rel="alternate" hreflang="zh-Hans" href="https://ishabamir.github.io/">
+<link rel="alternate" hreflang="zh-Hant" href="https://ishabamir.github.io/zh-tw/">
+<link rel="alternate" hreflang="en" href="https://ishabamir.github.io/en/">
+<link rel="alternate" hreflang="ja" href="https://ishabamir.github.io/ja/">
+<link rel="alternate" hreflang="id" href="https://ishabamir.github.io/id/">
+<link rel="alternate" hreflang="th" href="https://ishabamir.github.io/th/">
+<link rel="alternate" hreflang="vi" href="https://ishabamir.github.io/vi/">
+<link rel="alternate" hreflang="ms" href="https://ishabamir.github.io/ms/">
+<link rel="alternate" hreflang="fil" href="https://ishabamir.github.io/fil/">
+<link rel="alternate" hreflang="km" href="https://ishabamir.github.io/km/">
+<link rel="alternate" hreflang="lo" href="https://ishabamir.github.io/lo/">
+<link rel="alternate" hreflang="my" href="https://ishabamir.github.io/my/">
+<link rel="alternate" hreflang="x-default" href="https://ishabamir.github.io/">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "name": "ທົດສອບຫູຟັງ ແລະສຽງອອນລາຍ",
+   "url": "https://ishabamir.github.io/lo/",
+   "applicationCategory": "MultimediaApplication",
+   "operatingSystem": "Web browser",
+   "browserRequirements": "Requires Web Audio API",
+   "inLanguage": "lo",
+   "description": "ທົດສອບຫູຟັງ ແລະສຽງອອນໄລນ໌ຟຣີ: ການກວດສອບຊ່ອງຊ້າຍ/ຂວາ, ການກວາດຄວາມຖີ່ 20Hz–20kHz ສຳລັບການຕອບສະໜອງແລະການໄດ້ຍິນ, BPM tap counter. ແລ່ນຢູ່ໃນຕົວທ່ອງເວັບຂອງທ່ານຜ່ານ Web Audio — ບໍ່ມີຫຍັງຖືກອັບໂຫລດ.",
+   "isAccessibleForFree": true,
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "author": {
+    "@type": "Person",
+    "name": "Lin Yifan",
+    "url": "https://ishabamir.github.io/about-editorial/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "lo",
+   "url": "https://ishabamir.github.io/lo/",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "ລະດັບຂອງການໄດ້ຍິນຂອງມະນຸດແມ່ນຫຍັງ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ປະມານ 20Hz ຫາ 20kHz ສໍາລັບໄວຫນຸ່ມທີ່ມີສຸຂະພາບດີ. ຂີດຈຳກັດດ້ານເທິງທີ່ໄດ້ຍິນໄດ້ຫຼຸດລົງເທື່ອລະກ້າວຕາມອາຍຸ, ເຊິ່ງເປັນສ່ວນປົກກະຕິຂອງອາຍຸ."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ເຄື່ອງມືນີ້ອັບໂຫລດສຽງຂອງຂ້ອຍບໍ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ບໍ່. ສຽງທັງໝົດຖືກສັງເຄາະ ແລະຫຼິ້ນຢູ່ໃນທ້ອງຖິ່ນໂດຍ Web Audio API ຂອງຕົວທ່ອງເວັບ; ບໍ່ມີຫຍັງຖືກບັນທຶກ ຫຼືສົ່ງຜ່ານເຄືອຂ່າຍ."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ມັນເປັນເລື່ອງປົກກະຕິທີ່ຈະບໍ່ໄດ້ຍິນເກີນ 16kHz?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ທົ່ວໄປຫຼາຍ. ສໍາລັບຄົນສ່ວນໃຫຍ່ທີ່ມີອາຍຸ 20 ຫາ 25 ປີ, ຂອບເຂດຈໍາກັດເທິງຫຼຸດລົງຢູ່ທີ່ປະມານ 15 ຫາ 17kHz - ອາຍຸປົກກະຕິ."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ການທົດສອບຊ້າຍ / ຂວາແມ່ນຫຍັງດີ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ມັນ​ເປີດ​ເຜີຍ​ຊ່ອງ​ທາງ​ທີ່​ຖືກ​ສະ​ຫຼັບ​ຢ່າງ​ວ່ອງ​ໄວ​, ຮູບ​ພາບ​ຂ້າງ​ຕາຍ​ຫຼື​ນອກ​ສູນ​, ແລະ​ຢືນ​ຢັນ​ການ​ສະ​ເຕ​ຣິ​ໂອ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ​ເຮັດ​ວຽກ​."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ຕົວນັບ BPM ຖືກຕ້ອງເທົ່າໃດ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ຫຼາຍທ່ານປາດສະຫມໍ່າສະເຫມີມັນໄດ້ຮັບ; ທີ່ຜ່ານມາແປດຕີຄວາມຜິດພາດແມ່ນປົກກະຕິແລ້ວພາຍໃນບວກຫຼືລົບຫນຶ່ງ BPM."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body><div class="wrap"><main>
+<nav class="lang">Language: <a href="/">简体中文</a> · <a href="/zh-tw/">繁體中文</a> · <a href="/en/">English</a> · <a href="/ja/">日本語</a> · <a href="/id/">Bahasa Indonesia</a> · <a href="/th/">ไทย</a> · <a href="/vi/">Tiếng Việt</a> · <a href="/ms/">Bahasa Melayu</a> · <a href="/fil/">Filipino</a> · <a href="/km/">ភាសាខ្មែរ</a> · <strong>ພາສາລາວ</strong> · <a href="/my/">မြန်မာ</a></nav>
+<h1>ທົດສອບຫູຟັງ ແລະສຽງອອນລາຍ</h1>
+<figure class="i4png"><picture><source type="image/webp" srcset="/img/cover_lo.webp"><img src="/img/cover_lo.png" alt="ຕົວຢ່າງເຄື່ອງມືທົດສອບຫູຟັງ ແລະສຽງອອນລາຍ" fetchpriority="high" width="1120" height="746"></picture><figcaption>Fig: ການທົດສອບຫູຟັງອອນໄລນ໌ &amp; ສຽງ (ຊ່ອງ L/R · ການກວາດຄວາມຖີ່ · ແຕະ BPM).</figcaption></figure>
+<p>ໃຊ້ Web Audio API ໃນຕົວຂອງຕົວທ່ອງເວັບເພື່ອທົດສອບຊ່ອງທາງຊ້າຍແລະຂວາຂອງຫູຟັງຂອງທ່ານ, ກວາດການຕອບໂຕ້ຄວາມຖີ່ຈາກ 20Hz ຫາ 20kHz, ແລະແຕະ BPM ຂອງເພງ. ທຸກຢ່າງຖືກສັງເຄາະຢູ່ໃນທ້ອງຖິ່ນແບບສົດໆ — ບໍ່ມີການບັນທຶກໄວ້, ບໍ່ມີການອັບໂຫຼດ, ຖືກລຶບລ້າງເມື່ອທ່ານປິດໜ້າ.</p>
+<h2>ສາມການທົດສອບ, ພ້ອມທີ່ຈະນໍາໃຊ້</h2>
+<div class="tool"><h3>1. ການທົດສອບຊ່ອງທາງຊ້າຍ / ຂວາ</h3><p>ຫຼິ້ນສຽງທີ່ບໍລິສຸດໃນແຕ່ລະດ້ານເພື່ອຢືນຢັນວ່າຫູຊ້າຍ, ຫູຂວາແລະສາຍສາຍສະເຕີລິໂອຖືກຕ້ອງ, ແລະຈັບຊ່ອງທີ່ປ່ຽນຫຼືຕາຍ.</p><button id="lr-left">L</button><button id="lr-right">R</button><button id="lr-both">L+R</button><button id="lr-stop" class="ghost">ຢຸດ</button><span id="lrstate" class="state">ບໍ່ໄດ້ຫຼິ້ນ</span></div><div class="tool"><h3>2. ຄວາມຖີ່ກວາດລ້າ (20Hz–20kHz)</h3><p>ໂຕນ sine glides ກ້ຽງຈາກ 20Hz ເຖິງ 20kHz. ໃຫ້ສັງເກດຄວາມຖີ່ຕໍ່າສຸດ ແລະສູງສຸດທີ່ເຈົ້າສາມາດໄດ້ຍິນ — ມັນທົດສອບທັງການຕອບສະໜອງຂອງຫູຟັງ ແລະໄລຍະການໄດ້ຍິນຂອງເຈົ້າເອງ.</p><button id="sweep-start">ເລີ່ມກວາດ</button><button id="sweep-stop" class="ghost">ຢຸດ</button><span id="sweepstate" class="state">ບໍ່ໄດ້ຫຼິ້ນ</span><div class="big" id="sweephz">— Hz</div></div><div class="tool"><h3>3. BPM tap counter</h3><p>ແຕະປຸ່ມພ້ອມກັບເຄື່ອງຕີ ແລະມັນຄິດໄລ່ຈັງຫວະໃນເທື່ອຕໍ່ນາທີ (BPM); ແຕະແປດເທື່ອຫຼືຫຼາຍກວ່ານັ້ນສໍາລັບການອ່ານທີ່ຄົງທີ່.</p><button id="bpm-tap">ແຕະເພື່ອຕີ</button><button id="bpm-reset" class="ghost">ຣີເຊັດ</button><div class="big" id="bpmval">—</div></div><p class="note">ຄວາມ​ເປັນ​ສ່ວນ​ຕົວ​: ທຸກ​ການ​ທົດ​ສອບ​ແລ່ນ​ຢູ່​ໃນ​ຕົວ​ທ່ອງ​ເວັບ​ຂອງ​ທ່ານ​. ສຽງຖືກສັງເຄາະໃນເວລາຈິງໂດຍ Web Audio, ແລະທັງການແຕະ ຫຼືສຽງໃດໆຂອງທ່ານອອກຈາກອຸປະກອນຂອງທ່ານ.</p>
+<figure class="diagwrap"><svg viewBox="0 0 760 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Web Audio signal chain" class="diag"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#27c85a"/></marker></defs><rect x="2" y="2" width="756" height="146" rx="14" fill="#0d142c"/><rect x="18" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="77" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Source</text><line x1="136" y1="75" x2="164" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="166" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="225" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Oscillator</text><line x1="284" y1="75" x2="312" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="314" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="373" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Gain</text><line x1="432" y1="75" x2="460" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="462" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="521" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Panner</text><line x1="580" y1="75" x2="608" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="610" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="669" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Output</text><text x="380" y="30" fill="#8fa6d8" font-family="Segoe UI,Arial" font-size="13" text-anchor="middle">AudioContext</text></svg><figcaption>Fig 1: ລະບົບຕ່ອງໂສ້ສັນຍານ Web Audio — ແຫຼ່ງໄຫຼຜ່ານ oscillator, gain ແລະ stereo panner ໄປຫາຜົນຜະລິດ.</figcaption></figure>
+<h2>ແຜ່ນ cheat ແຖບຄວາມຖີ່ສຽງ</h2>
+<table><tr><th>ແຖບ</th><th>ຊ່ວງ</th><th>ສິ່ງທີ່ທ່ານໄດ້ຍິນ / ໃຊ້</th></tr><tr><td>ເບດຍ່ອຍ</td><td class="mono">20–60 Hz</td><td>ຮູ້ສຶກວ່າ rumble ຂອງເຕະແລະເບດ; ຫຼາຍເກີນໄປເຮັດໃຫ້ຂີ້ຕົມ.</td></tr><tr><td>ເບສ</td><td class="mono">60–250 Hz</td><td>ຮ່າງກາຍຂອງຈັງຫວະແລະພະລັງງານ; ບອກເຈົ້າວ່າເບສແໜ້ນບໍ່.</td></tr><tr><td>ກາງຕ່ຳ</td><td class="mono">250–500 Hz</td><td>ຄວາມອົບອຸ່ນຂອງສຽງແລະເຄື່ອງມື; boxiness ອາໃສຢູ່ທີ່ນີ້.</td></tr><tr><td>ກາງ</td><td class="mono">500 Hz–2 kHz</td><td>ຮ່າງກາຍ vocal ຕົ້ນຕໍແລະການປະກົດຕົວ; ຂັບຄວາມສະດວກສະບາຍໃນການຟັງດົນນານ.</td></tr><tr><td>ກາງ​ສູງ</td><td class="mono">2–4 kHz</td><td>ຄວາມແຈ່ມແຈ້ງ ແລະ ຄວາມຊັດເຈນ; harsh ແລະ piercing ຖ້າ overdone.</td></tr><tr><td>ປະກົດຕົວ</td><td class="mono">4–6 kHz</td><td>ລາຍລະອຽດແລະຄວາມລະອຽດ; ໂຄງສ້າງຂອງເຄື່ອງມື.</td></tr><tr><td>ຄວາມສະຫວ່າງ</td><td class="mono">6–20 kHz</td><td>ອາກາດແລະ sparkle; ຊ່ວງທໍາອິດທີ່ສູນເສຍໄປກັບອາຍຸ.</td></tr></table>
+<figure class="i4png"><picture><source type="image/webp" srcset="/img/board_lo.webp"><img src="/img/board_lo.png" alt="ແຖບຄວາມຖີ່ຂອງການໄດ້ຍິນຂອງມະນຸດ ແລະຮູບແຕ້ມຮູບ" loading="lazy" width="1120" height="746"></picture><figcaption>ຮູບ: ການກວາດຄວາມຖີ່ 20Hz–20kHz ເພື່ອກວດເບິ່ງການຕອບສະໜອງຂອງຫູຟັງ ແລະໄລຍະການໄດ້ຍິນຂອງທ່ານ.</figcaption></figure>
+<figure class="diagwrap"><svg viewBox="0 0 760 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Human audible frequency spectrum 20Hz to 20kHz" class="diag"><rect x="2" y="2" width="756" height="226" rx="14" fill="#0d142c"/><line x1="40" y1="186" x2="724" y2="186" stroke="#3a4a78" stroke-width="1.5"/><rect x="40.0" y="130" width="74" height="56" rx="5" fill="#1f8f45" opacity="0.92"/><text x="77.0" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">20</text><rect x="127.1" y="82" width="74" height="104" rx="5" fill="#1f8f45" opacity="0.92"/><text x="164.1" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">60</text><rect x="214.3" y="66" width="74" height="120" rx="5" fill="#27c85a" opacity="0.92"/><text x="251.3" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">250</text><rect x="301.4" y="36" width="74" height="150" rx="5" fill="#27c85a" opacity="0.92"/><text x="338.4" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">500</text><rect x="388.6" y="54" width="74" height="132" rx="5" fill="#27c85a" opacity="0.92"/><text x="425.6" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">2k</text><rect x="475.7" y="90" width="74" height="96" rx="5" fill="#1f8f45" opacity="0.92"/><text x="512.7" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">4k</text><rect x="562.9" y="116" width="74" height="70" rx="5" fill="#1f8f45" opacity="0.92"/><text x="599.9" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">6k</text><rect x="650.0" y="142" width="74" height="44" rx="5" fill="#1f8f45" opacity="0.92"/><text x="687.0" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">20k</text><text x="724" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="end">Hz</text><text x="40" y="30" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="13">20 Hz – 20 kHz</text></svg><figcaption>ຮູບທີ 2: ແຖບສຽງຂອງມະນຸດ (20Hz–20kHz) ແລະແຕ່ລະໄລຍະສຽງແນວໃດ.</figcaption></figure>
+<h2>ໃນເວລາທີ່ມັນມາຢູ່ໃນ handy</h2>
+<ul class="scenes"><li>ຫູຟັງໃໝ່: ທົດສອບຊ້າຍ/ຂວາກ່ອນເພື່ອຢືນຢັນວ່າບໍ່ມີຫຍັງຖືກປ່ຽນ ຫຼືຕາຍຢູ່ຂ້າງໜຶ່ງ.</li><li>ສົງໃສວ່າສູນເສຍການໄດ້ຍິນ: ໃຊ້ກວາດເພື່ອເບິ່ງວ່າເຈົ້າຍັງໄດ້ຍິນຢູ່ສູງເທົ່າໃດ — ຜູ້ໃຫຍ່ສ່ວນໃຫຍ່ຈະຫາຍໄປເກີນ 15kHz.</li><li>ການປະຕິບັດຫຼືການແກ້ໄຂ: ແຕະອອກ BPM ເພື່ອແກ້ໄຂ tempo, ຫຼັງຈາກນັ້ນຊອກຫາລາຍການຫຼິ້ນດ້ວຍຄວາມໄວດຽວກັນໃນ Soda Music.</li></ul><h2>ຄຳຖາມທີ່ມັກຖາມເລື້ອຍໆ</h2>
+<div class="faq"><h3>ລະດັບຂອງການໄດ້ຍິນຂອງມະນຸດແມ່ນຫຍັງ?</h3><p>ປະມານ 20Hz ຫາ 20kHz ສໍາລັບໄວຫນຸ່ມທີ່ມີສຸຂະພາບດີ. ຂີດຈຳກັດດ້ານເທິງທີ່ໄດ້ຍິນໄດ້ຫຼຸດລົງເທື່ອລະກ້າວຕາມອາຍຸ, ເຊິ່ງເປັນສ່ວນປົກກະຕິຂອງອາຍຸ.</p><h3>ເຄື່ອງມືນີ້ອັບໂຫລດສຽງຂອງຂ້ອຍບໍ?</h3><p>ບໍ່. ສຽງທັງໝົດຖືກສັງເຄາະ ແລະຫຼິ້ນຢູ່ໃນທ້ອງຖິ່ນໂດຍ Web Audio API ຂອງຕົວທ່ອງເວັບ; ບໍ່ມີຫຍັງຖືກບັນທຶກ ຫຼືສົ່ງຜ່ານເຄືອຂ່າຍ.</p><h3>ມັນເປັນເລື່ອງປົກກະຕິທີ່ຈະບໍ່ໄດ້ຍິນເກີນ 16kHz?</h3><p>ທົ່ວໄປຫຼາຍ. ສໍາລັບຄົນສ່ວນໃຫຍ່ທີ່ມີອາຍຸ 20 ຫາ 25 ປີ, ຂອບເຂດຈໍາກັດເທິງຫຼຸດລົງຢູ່ທີ່ປະມານ 15 ຫາ 17kHz - ອາຍຸປົກກະຕິ.</p><h3>ການທົດສອບຊ້າຍ / ຂວາແມ່ນຫຍັງດີ?</h3><p>ມັນ​ເປີດ​ເຜີຍ​ຊ່ອງ​ທາງ​ທີ່​ຖືກ​ສະ​ຫຼັບ​ຢ່າງ​ວ່ອງ​ໄວ​, ຮູບ​ພາບ​ຂ້າງ​ຕາຍ​ຫຼື​ນອກ​ສູນ​, ແລະ​ຢືນ​ຢັນ​ການ​ສະ​ເຕ​ຣິ​ໂອ​ອຸ​ປະ​ກອນ​ຂອງ​ທ່ານ​ເຮັດ​ວຽກ​.</p><h3>ຕົວນັບ BPM ຖືກຕ້ອງເທົ່າໃດ?</h3><p>ຫຼາຍທ່ານປາດສະຫມໍ່າສະເຫມີມັນໄດ້ຮັບ; ທີ່ຜ່ານມາແປດຕີຄວາມຜິດພາດແມ່ນປົກກະຕິແລ້ວພາຍໃນບວກຫຼືລົບຫນຶ່ງ BPM.</p></div><section id="i4data"><h2>ພາບລວມຂອງການໄດ້ຍິນ-ສຸຂະພາບປີ 2026 (ຄາດຄະເນ)</h2><p>ອົງການ​ອະນາ​ໄມ​ໂລກ (WHO) ຄາດ​ວ່າ​ຮອດ​ປີ 2050 ເກືອບ 2,5 ຕື້​ຄົນ​ຈະ​ມີ​ການ​ສູນ​ເສຍ​ການ​ໄດ້ຍິນ​ບາງ​ລະດັບ, ​ໃນ​ນັ້ນ 700 ລ້ານ​ກວ່າ​ຄົນ​ຈະ​ຕ້ອງ​ໄດ້​ຮັບ​ການ​ຟື້ນ​ຟູ​ການ​ໄດ້ຍິນ; ຜູ້ໃຫຍ່ໄວໜຸ່ມຫຼາຍກວ່າ 1 ຕື້ຄົນມີຄວາມສ່ຽງຕໍ່ການສູນເສຍການໄດ້ຍິນແບບຖາວອນ, ຫຼີກເວັ້ນຈາກການຟັງທີ່ບໍ່ປອດໄພ (ດັງເກີນໄປ, ດົນເກີນໄປ). Extrapolating, ປະຊາກອນຫນຸ່ມທີ່ໄດ້ຮັບຜົນກະທົບຈາກການຟັງທີ່ບໍ່ປອດໄພໃນປີ 2026 ຍັງຄົງຢູ່ໃນລໍາດັບຂອງຫນຶ່ງຕື້.</p><p class="note">(ຕົວເລກຂ້າງເທິງນີ້ແມ່ນການປະເມີນທີ່ສ້າງຂຶ້ນຈາກຂໍ້ມູນສາທາລະນະຂອງ WHO, ບໍ່ແມ່ນການວັດແທກດ້ວຍມືທຳອິດໂດຍເວັບໄຊນີ້; ສະແດງໃຫ້ເຫັນເພື່ອຊຸກຍູ້ປະລິມານທີ່ປອດໄພ ແລະ ການພັກຜ່ອນເປັນປະຈຳ).</p></section><div class="related"><h2>ທີ່ກ່ຽວຂ້ອງ</h2><p>ຕ້ອງການທົດສອບໃນຂະນະທີ່ທ່ານຟັງ, ຫຼືໃຊ້ tempo ວັດແທກສໍາລັບລາຍການຫຼິ້ນຂອງທ່ານບໍ? ມຸ່ງຫນ້າໄປ <a href="https://sodamusicapp.com/download/">ດາວໂຫລດ Soda Music ສໍາລັບ desktop</a> ເພື່ອໃຫ້ໄດ້ຮັບລູກຄ້າ desktop.</p></div><div class="src"><h2>ແຫຼ່ງຂໍ້ມູນ</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" rel="nofollow" target="_blank">MDN · Web Audio API (ເຄື່ອງມືນີ້ເຮັດວຽກແນວໃດ)</a></li><li><a href="https://en.wikipedia.org/wiki/Hearing_range" rel="nofollow" target="_blank">Wikipedia · ລະດັບການໄດ້ຍິນຂອງມະນຸດ</a></li><li><a href="https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss" rel="nofollow" target="_blank">WHO · ຂໍ້ມູນການຫູໜວກ ແລະການສູນເສຍການໄດ້ຍິນ</a></li></ul></div>
+</main>
+<footer>ການທົດສອບເຫຼົ່ານີ້ດໍາເນີນການຢູ່ໃນ Web Audio API ຂອງຕົວທ່ອງເວັບ; ວົງດົນຕີ ແລະ ລະດັບການຟັງໄດ້ປະຕິບັດຕາມການອ້າງອີງເຖິງວິສະວະກຳສຽງ ແລະສຽງວິທະຍາສາທາລະນະ, ແລະຕົວເລກປີ 2026 ແມ່ນຄາດຄະເນຈາກຂໍ້ມູນສາທາລະນະຂອງ WHO - ສຳລັບການອ້າງອີງເທົ່ານັ້ນ.<br><a href="/about-editorial/">ບັນນາທິການ: Lin Yifan</a> · ກ່ຽວກັບບັນນາທິການ ແລະນະໂຍບາຍເນື້ອຫາ<br>Open-source tool · MIT License</footer>
+</div>
+<script>window.L={"js_idle": "ບໍ່ໄດ້ຫຼິ້ນ", "js_playing": "ຕອນນີ້ກຳລັງຫຼິ້ນ", "js_sweeping": "ຄວາມຖີ່ຂອງການກວາດ…", "js_taps": "ແຕະຕໍ່ໄປ...", "js_bpm": "BPM", "lr_left": "L", "lr_right": "R", "lr_both": "L+R", "left": "L", "right": "R", "both": "L+R", "idle": "ບໍ່ໄດ້ຫຼິ້ນ", "playing": "ຕອນນີ້ກຳລັງຫຼິ້ນ", "sweeping": "ຄວາມຖີ່ຂອງການກວາດ…", "taps": "ແຕະຕໍ່ໄປ...", "bpm": "BPM"};</script>
+<script src="/app.js"></script></body></html>

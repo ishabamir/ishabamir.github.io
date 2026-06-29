@@ -1,3 +1,7 @@
-# 汽水音乐
+# ishabamir.github.io
 
-官网: https://sodamusicapp.com/
+Online headphone & audio test (Web Audio API) · 12 languages.
+
+Live: https://ishabamir.github.io/
+
+MIT License.

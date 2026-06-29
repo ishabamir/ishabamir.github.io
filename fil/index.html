@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="fil"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pagsubok sa Channel sa Kaliwa/kanang Headphone · Frequency Sweep · BPM Tap | Online na Audio Test</title>
+<meta name="description" content="Libreng online na pagsubok sa headphone at audio: check sa kaliwa/kanang channel, 20Hz–20kHz frequency sweep para sa pagtugon at pandinig, BPM tap counter. Gumagana sa iyong browser sa pamamagitan ng Web Audio — walang na-upload.">
+<link rel="canonical" href="https://ishabamir.github.io/fil/">
+<link rel="alternate" hreflang="zh-Hans" href="https://ishabamir.github.io/">
+<link rel="alternate" hreflang="zh-Hant" href="https://ishabamir.github.io/zh-tw/">
+<link rel="alternate" hreflang="en" href="https://ishabamir.github.io/en/">
+<link rel="alternate" hreflang="ja" href="https://ishabamir.github.io/ja/">
+<link rel="alternate" hreflang="id" href="https://ishabamir.github.io/id/">
+<link rel="alternate" hreflang="th" href="https://ishabamir.github.io/th/">
+<link rel="alternate" hreflang="vi" href="https://ishabamir.github.io/vi/">
+<link rel="alternate" hreflang="ms" href="https://ishabamir.github.io/ms/">
+<link rel="alternate" hreflang="fil" href="https://ishabamir.github.io/fil/">
+<link rel="alternate" hreflang="km" href="https://ishabamir.github.io/km/">
+<link rel="alternate" hreflang="lo" href="https://ishabamir.github.io/lo/">
+<link rel="alternate" hreflang="my" href="https://ishabamir.github.io/my/">
+<link rel="alternate" hreflang="x-default" href="https://ishabamir.github.io/">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "name": "Online na Pagsubok sa Headphone at Audio",
+   "url": "https://ishabamir.github.io/fil/",
+   "applicationCategory": "MultimediaApplication",
+   "operatingSystem": "Web browser",
+   "browserRequirements": "Requires Web Audio API",
+   "inLanguage": "fil",
+   "description": "Libreng online na pagsubok sa headphone at audio: check sa kaliwa/kanang channel, 20Hz–20kHz frequency sweep para sa pagtugon at pandinig, BPM tap counter. Gumagana sa iyong browser sa pamamagitan ng Web Audio — walang na-upload.",
+   "isAccessibleForFree": true,
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "author": {
+    "@type": "Person",
+    "name": "Lin Yifan",
+    "url": "https://ishabamir.github.io/about-editorial/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "fil",
+   "url": "https://ishabamir.github.io/fil/",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Ano ang saklaw ng pandinig ng tao?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Halos 20Hz hanggang 20kHz para sa malusog na kabataan. Ang naririnig na limitasyon sa itaas ay unti-unting bumababa sa edad, na isang normal na bahagi ng pagtanda."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ina-upload ba ng tool na ito ang aking audio?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hindi. Lahat ng tunog ay synthesize at lokal na nilalaro ng Web Audio API ng browser; walang naitala o ipinadala sa network."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Normal ba na hindi makarinig sa itaas ng 16kHz?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Very common. Para sa karamihan ng mga tao na lampas 20 hanggang 25, ang pinakamataas na limitasyon ay bumaba sa humigit-kumulang 15 hanggang 17kHz — normal na pagtanda."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Para saan ang kaliwa/kanang pagsubok?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Mabilis nitong ipinapakita ang mga pinagpalit na channel, isang dead side o off-centre na imaging, at kinukumpirma ang gumaganang stereo ng iyong device."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Gaano katumpak ang BPM counter?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ang mas maraming tapikin mo ang steadier ito ay makakakuha; past eight beats ang error ay kadalasang nasa plus or minus one BPM."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body><div class="wrap"><main>
+<nav class="lang">Language: <a href="/">简体中文</a> · <a href="/zh-tw/">繁體中文</a> · <a href="/en/">English</a> · <a href="/ja/">日本語</a> · <a href="/id/">Bahasa Indonesia</a> · <a href="/th/">ไทย</a> · <a href="/vi/">Tiếng Việt</a> · <a href="/ms/">Bahasa Melayu</a> · <strong>Filipino</strong> · <a href="/km/">ភាសាខ្មែរ</a> · <a href="/lo/">ພາສາລາວ</a> · <a href="/my/">မြန်မာ</a></nav>
+<h1>Online na Pagsubok sa Headphone at Audio</h1>
+<figure class="i4png"><picture><source type="image/webp" srcset="/img/cover_fil.webp"><img src="/img/cover_fil.png" alt="Online na headphone at audio test tool na paglalarawan" fetchpriority="high" width="1120" height="746"></picture><figcaption>Fig: online na headphone at audio test (L/R channel · frequency sweep · BPM tap).</figcaption></figure>
+<p>Gamitin ang built-in na Web Audio API ng browser upang subukan ang kaliwa at kanang channel ng iyong mga headphone, sweep ang frequency response mula 20Hz hanggang 20kHz, at i-tap ang BPM ng isang kanta. Lahat ay lokal na synthesize sa real time — walang recording, walang upload, na-clear kapag isinara mo ang page.</p>
+<h2>Tatlong pagsubok, handa nang gamitin</h2>
+<div class="tool"><h3>1. Kaliwa / kanang pagsubok sa channel</h3><p>Magpatugtog ng purong tono sa bawat panig upang kumpirmahin na tama ang kaliwang tainga, kanang tainga at stereo wiring, at para mahuli ang mga pinagpalit o patay na channel.</p><button id="lr-left">L</button><button id="lr-right">R</button><button id="lr-both">L+R</button><button id="lr-stop" class="ghost">Tumigil ka</button><span id="lrstate" class="state">Hindi naglalaro</span></div><div class="tool"><h3>2. Frequency sweep (20Hz–20kHz)</h3><p>Ang isang sine tone ay tumatakbo nang maayos mula 20Hz hanggang 20kHz. Tandaan ang pinakamababa at pinakamataas na frequency na maririnig mo — sinusubok nito ang pagtugon ng iyong mga headphone at ang sarili mong saklaw ng pandinig.</p><button id="sweep-start">Simulan ang pagwalis</button><button id="sweep-stop" class="ghost">Tumigil ka</button><span id="sweepstate" class="state">Hindi naglalaro</span><div class="big" id="sweephz">— Hz</div></div><div class="tool"><h3>3. BPM tap counter</h3><p>I-tap ang button kasama ang beat at kinukuwenta nito ang tempo sa beats kada minuto (BPM); i-tap ang walo o higit pang beats para sa tuluy-tuloy na pagbabasa.</p><button id="bpm-tap">I-tap sa beat</button><button id="bpm-reset" class="ghost">I-reset</button><div class="big" id="bpmval">—</div></div><p class="note">Privacy: bawat pagsubok ay tumatakbo sa loob ng iyong browser. Na-synthesize ang tunog sa real time ng Web Audio, at hindi umaalis sa iyong device ang iyong mga pag-tap o anumang audio.</p>
+<figure class="diagwrap"><svg viewBox="0 0 760 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Web Audio signal chain" class="diag"><defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#27c85a"/></marker></defs><rect x="2" y="2" width="756" height="146" rx="14" fill="#0d142c"/><rect x="18" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="77" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Source</text><line x1="136" y1="75" x2="164" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="166" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="225" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Oscillator</text><line x1="284" y1="75" x2="312" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="314" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="373" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Gain</text><line x1="432" y1="75" x2="460" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="462" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="521" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Panner</text><line x1="580" y1="75" x2="608" y2="75" stroke="#27c85a" stroke-width="2" marker-end="url(#ar)"/><rect x="610" y="48" width="118" height="54" rx="10" fill="#13224a" stroke="#27c85a" stroke-width="1.5"/><text x="669" y="80" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="15" text-anchor="middle">Output</text><text x="380" y="30" fill="#8fa6d8" font-family="Segoe UI,Arial" font-size="13" text-anchor="middle">AudioContext</text></svg><figcaption>Fig 1: Web Audio signal chain — ang source ay dumadaloy sa pamamagitan ng oscillator, gain at stereo panner sa output.</figcaption></figure>
+<h2>Cheet sheet ng audio frequency band</h2>
+<table><tr><th>banda</th><th>Saklaw</th><th>Ano ang iyong naririnig / ginagamit</th></tr><tr><td>Sub-bass</td><td class="mono">20–60 Hz</td><td>Nadama ang dagundong ng sipa at bass; sobrang nagiging maputik.</td></tr><tr><td>Bass</td><td class="mono">60–250 Hz</td><td>Ang katawan ng ritmo at kapangyarihan; nagsasabi sa iyo kung masikip ang bass.</td></tr><tr><td>Mababang mids</td><td class="mono">250–500 Hz</td><td>Ang init ng mga boses at instrumento; dito nakatira ang boxiness.</td></tr><tr><td>Mids</td><td class="mono">500 Hz–2 kHz</td><td>Pangunahing vocal body at presensya; nagtutulak ng kaginhawaan sa mahabang pakikinig.</td></tr><tr><td>Mataas na mids</td><td class="mono">2–4 kHz</td><td>Kaliwanagan at pagbigkas; harsh at piercing kung sumobra.</td></tr><tr><td>presensya</td><td class="mono">4–6 kHz</td><td>Detalye at resolusyon; ang texture ng mga instrumento.</td></tr><tr><td>Kaningningan</td><td class="mono">6–20 kHz</td><td>Hangin at kislap; nawala ang unang hanay sa edad.</td></tr></table>
+<figure class="i4png"><picture><source type="image/webp" srcset="/img/board_fil.webp"><img src="/img/board_fil.png" alt="Ilustrasyon ng frequency band at sweep na naririnig ng tao" loading="lazy" width="1120" height="746"></picture><figcaption>Fig: 20Hz–20kHz frequency sweep para tingnan ang tugon ng headphone at ang saklaw ng iyong pandinig.</figcaption></figure>
+<figure class="diagwrap"><svg viewBox="0 0 760 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Human audible frequency spectrum 20Hz to 20kHz" class="diag"><rect x="2" y="2" width="756" height="226" rx="14" fill="#0d142c"/><line x1="40" y1="186" x2="724" y2="186" stroke="#3a4a78" stroke-width="1.5"/><rect x="40.0" y="130" width="74" height="56" rx="5" fill="#1f8f45" opacity="0.92"/><text x="77.0" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">20</text><rect x="127.1" y="82" width="74" height="104" rx="5" fill="#1f8f45" opacity="0.92"/><text x="164.1" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">60</text><rect x="214.3" y="66" width="74" height="120" rx="5" fill="#27c85a" opacity="0.92"/><text x="251.3" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">250</text><rect x="301.4" y="36" width="74" height="150" rx="5" fill="#27c85a" opacity="0.92"/><text x="338.4" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">500</text><rect x="388.6" y="54" width="74" height="132" rx="5" fill="#27c85a" opacity="0.92"/><text x="425.6" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">2k</text><rect x="475.7" y="90" width="74" height="96" rx="5" fill="#1f8f45" opacity="0.92"/><text x="512.7" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">4k</text><rect x="562.9" y="116" width="74" height="70" rx="5" fill="#1f8f45" opacity="0.92"/><text x="599.9" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">6k</text><rect x="650.0" y="142" width="74" height="44" rx="5" fill="#1f8f45" opacity="0.92"/><text x="687.0" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="middle">20k</text><text x="724" y="206" fill="#8fa6d8" font-family="Consolas,monospace" font-size="12" text-anchor="end">Hz</text><text x="40" y="30" fill="#dce6ff" font-family="Segoe UI,Arial" font-size="13">20 Hz – 20 kHz</text></svg><figcaption>Fig 2: ang naririnig na banda ng tao (20Hz–20kHz) at kung paano tumutunog ang bawat hanay.</figcaption></figure>
+<h2>Kapag ito ay dumating sa madaling gamiting</h2>
+<ul class="scenes"><li>Mga bagong headphone: patakbuhin muna ang kaliwa/kanang pagsubok para makumpirmang walang napalitan o patay sa isang tabi.</li><li>Pinaghihinalaang pagkawala ng pandinig: gamitin ang sweep upang makita kung gaano kataas ang iyong naririnig — karamihan sa mga nasa hustong gulang ay kumukupas nang higit sa 15kHz.</li><li>Magsanay o mag-edit: i-tap ang BPM para ayusin ang tempo, pagkatapos ay maghanap ng mga playlist sa parehong bilis sa Soda Music.</li></ul><h2>Mga madalas itanong</h2>
+<div class="faq"><h3>Ano ang saklaw ng pandinig ng tao?</h3><p>Halos 20Hz hanggang 20kHz para sa malusog na kabataan. Ang naririnig na limitasyon sa itaas ay unti-unting bumababa sa edad, na isang normal na bahagi ng pagtanda.</p><h3>Ina-upload ba ng tool na ito ang aking audio?</h3><p>Hindi. Lahat ng tunog ay synthesize at lokal na nilalaro ng Web Audio API ng browser; walang naitala o ipinadala sa network.</p><h3>Normal ba na hindi makarinig sa itaas ng 16kHz?</h3><p>Very common. Para sa karamihan ng mga tao na lampas 20 hanggang 25, ang pinakamataas na limitasyon ay bumaba sa humigit-kumulang 15 hanggang 17kHz — normal na pagtanda.</p><h3>Para saan ang kaliwa/kanang pagsubok?</h3><p>Mabilis nitong ipinapakita ang mga pinagpalit na channel, isang dead side o off-centre na imaging, at kinukumpirma ang gumaganang stereo ng iyong device.</p><h3>Gaano katumpak ang BPM counter?</h3><p>Ang mas maraming tapikin mo ang steadier ito ay makakakuha; past eight beats ang error ay kadalasang nasa plus or minus one BPM.</p></div><section id="i4data"><h2>2026 snapshot sa kalusugan ng pandinig (tantiya)</h2><p>Ang World Health Organization (WHO) ay nag-proyekto na sa 2050 halos 2.5 bilyong tao ang magkakaroon ng ilang antas ng pagkawala ng pandinig, kung saan higit sa 700 milyon ang mangangailangan ng rehabilitasyon sa pandinig; mahigit 1 bilyong young adult ang nasa panganib ng permanenteng, maiiwasang pagkawala ng pandinig mula sa hindi ligtas na pakikinig (masyadong malakas, masyadong mahaba). Extrapolating, ang kabataang populasyon na apektado ng hindi ligtas na pakikinig noong 2026 ay nananatiling nasa order ng isang bilyon.</p><p class="note">(Ang mga figure sa itaas ay isang pagtatantya na kinuha mula sa pampublikong data ng WHO, hindi ang unang-kamay na pagsukat ng site na ito; ipinapakita upang hikayatin ang ligtas na dami at regular na pahinga.)</p></section><div class="related"><h2>Kaugnay</h2><p>Gusto mo bang subukan habang nakikinig ka, o gumamit ng sinusukat na tempo para sa iyong mga playlist? Tumungo sa <a href="https://sodamusicapp.com/download/">i-download ang Soda Music para sa desktop</a> para makuha ang desktop client.</p></div><div class="src"><h2>Mga pinagmumulan</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" rel="nofollow" target="_blank">MDN · Web Audio API (kung paano gumagana ang tool na ito)</a></li><li><a href="https://en.wikipedia.org/wiki/Hearing_range" rel="nofollow" target="_blank">Wikipedia · Saklaw ng pandinig ng tao</a></li><li><a href="https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss" rel="nofollow" target="_blank">WHO · Data ng pagkabingi at pagkawala ng pandinig</a></li></ul></div>
+</main>
+<footer>Ang mga pagsubok na ito ay tumatakbo sa Web Audio API ng browser; ang mga banda at ang naririnig na hanay ay sumusunod sa mga pampublikong audio-engineering at audiology na mga sanggunian, at ang 2026 figure ay tinatantya mula sa pampublikong data ng WHO — para sa sanggunian lamang.<br><a href="/about-editorial/">Editor: Lin Yifan</a> · Tungkol sa editor at patakaran sa nilalaman<br>Open-source tool · MIT License</footer>
+</div>
+<script>window.L={"js_idle": "Hindi naglalaro", "js_playing": "Naglalaro ngayon", "js_sweeping": "Dalas ng pagwawalis...", "js_taps": "Patuloy na mag-tap…", "js_bpm": "BPM", "lr_left": "L", "lr_right": "R", "lr_both": "L+R", "left": "L", "right": "R", "both": "L+R", "idle": "Hindi naglalaro", "playing": "Naglalaro ngayon", "sweeping": "Dalas ng pagwawalis...", "taps": "Patuloy na mag-tap…", "bpm": "BPM"};</script>
+<script src="/app.js"></script></body></html>
